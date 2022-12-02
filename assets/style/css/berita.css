@@ -2,9 +2,9 @@
 :root {
   /* color */
   --main-color: #ed7638;
-  --secondary-color: #2B7A0B;
-  --third-color:#F3C24C;
-  --fourth-color:#FFD779;
+  --secondary-color: #2b7a0b;
+  --third-color: #f3c24c;
+  --fourth-color: #ffd779;
 }
 
 * {
@@ -19,7 +19,7 @@
 }
 
 body {
-  background-color: #e5e5e5;
+  background-color: #eefff2;
   overflow-x: hidden;
 }
 
@@ -133,6 +133,9 @@ body {
 #berita-lain .container .row .berita .link {
   background-color: #ffffff;
 }
+#berita-lain .container .row .berita .link .card-news {
+  width: 30rem;
+}
 #berita-lain .container .row .berita .link .card-news .keterangan p {
   color: var(--main-color);
 }
@@ -244,6 +247,38 @@ footer .vector4 {
   .contact .bi {
     color: var(--main-color);
     font-size: 14px;
+  }
+  #hero {
+    height: 550px;
+    background-image: url(/assets/img/hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+  }
+  #hero .bg-filter {
+    height: 550px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  #hero .hero-content {
+    bottom: 10%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+  }
+  #hero .hero-content .input-group .search-form-control {
+    font-size: 8px !important;
+  }
+  #hero .hero-content .input-group .search-btn {
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-size: 8px !important;
   }
   footer {
     background-color: var(--third-color);
@@ -409,10 +444,36 @@ footer .vector4 {
     font-size: 14px;
   }
   #hero {
-    height: 70vh;
+    height: 550px;
+    background-image: url(/assets/img/hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
   }
-  #hero .container-fluid .row .search .search-btn {
-    font-size: 12px;
+  #hero .bg-filter {
+    height: 550px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  #hero .hero-content {
+    bottom: 10%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+  }
+  #hero .hero-content .input-group .search-form-control {
+    font-size: 11px;
+  }
+  #hero .hero-content .input-group .search-btn {
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-size: 11px;
   }
   #prestasi .container .row .title {
     border-right: none;
@@ -526,6 +587,58 @@ footer .vector4 {
   #hero {
     height: 60vh;
   }
+  #main-news .container .row .link-news {
+    background-color: rgb(255, 255, 255);
+  }
+  #main-news .container .row .link-news .news-body .category {
+    font-size: 16px;
+    color: var(--main-color);
+    -webkit-text-decoration: dashed;
+            text-decoration: dashed;
+  }
+  #main-news .container .row .link-news .news-body .text-news .title {
+    font-size: 25px;
+    color: var(--main-color);
+    font-weight: 600;
+  }
+  #main-news .container .row .link-news .news-body .text-news .deskripsi {
+    font-size: 13px;
+    color: var(--main-color);
+    text-align: justify;
+  }
+  #main-news .container .row .link-news:hover {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1764705882);
+    background-color: rgb(238, 238, 255);
+  }
+  #berita-lain .container .row .info-detail .title {
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 600;
+  }
+  #berita-lain .container .row .berita .link {
+    background-color: #ffffff;
+  }
+  #berita-lain .container .row .berita .link .card-news {
+    width: 22rem !important;
+  }
+  #berita-lain .container .row .berita .link .card-news .keterangan p {
+    color: var(--main-color);
+    font-size: 10px;
+  }
+  #berita-lain .container .row .berita .link .card-news .body .title {
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 18px;
+  }
+  #berita-lain .container .row .berita .link .card-news .body .text {
+    color: var(--main-color);
+    font-size: 10px;
+  }
+  #berita-lain .container .row .berita .link:hover {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1764705882);
+    background-color: rgb(238, 238, 255);
+  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -624,6 +737,37 @@ footer .vector4 {
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  #berita-lain .container .row .info-detail .title {
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 600;
+  }
+  #berita-lain .container .row .berita .link {
+    background-color: #ffffff;
+  }
+  #berita-lain .container .row .berita .link .card-news {
+    width: 25rem;
+  }
+  #berita-lain .container .row .berita .link .card-news .keterangan p {
+    color: var(--main-color);
+    font-size: 15px;
+  }
+  #berita-lain .container .row .berita .link .card-news .body .title {
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 18px;
+  }
+  #berita-lain .container .row .berita .link .card-news .body .text {
+    color: var(--main-color);
+    font-size: 10px;
+  }
+  #berita-lain .container .row .berita .link:hover {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1764705882);
+    background-color: rgb(238, 238, 255);
+  }
+}
 @media only screen and (min-width: 1200px) {
   .navbar .container {
     border-bottom: 3px solid var(--secondary-color);

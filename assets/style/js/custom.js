@@ -15,19 +15,19 @@ var sarana = new Swiper(".slide-sarana", {
 var kegiatan = new Swiper(".slide-kegiatan", {
   cssMode: true,
   slidesPerView: 2.5,
-  spaceBetween: 0,
+  spaceBetween: 1,
   breakpoints: {
     300: {
-      slidesPerView: 1.8,
+      slidesPerView: 2.1,
     },
     600: {
       slidesPerView: 2.3,
     },
     768: {
-      slidesPerView: 2.3,
+      slidesPerView: 2.5,
     },
     992: {
-      slidesPerView: 2.3,
+      slidesPerView: 2.5,
     },
     1200: {
       slidesPerView: 2.8,

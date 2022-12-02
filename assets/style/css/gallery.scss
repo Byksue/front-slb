@@ -20,7 +20,7 @@
 }
 
 body {
-  background-color: #e5e5e5;
+  background-color: #EEFFF2;
   overflow-x: hidden;
 }
 
@@ -250,9 +250,9 @@ body {
     border-radius: 50px;
     opacity: 0;
     transition: .5s ease;
-    background-color: var(--secondary-color);
+    background-color: var(--main-color);
     .text{
-      color: var(--text-page-color);
+      color: #fff;
       font-weight: 600;
       width: 90%;
       font-size: 20px;

@@ -20,7 +20,7 @@
 }
 
 body {
-  background-color: #e5e5e5;
+  background-color: #EEFFF2;
   overflow-x: hidden;
 }
 
@@ -108,6 +108,10 @@ body {
           font-weight: 600;
         }
         p {
+          color: #fff;
+        }
+        .btn{
+          background-color: var(--secondary-color);
           color: #fff;
         }
       }
@@ -306,6 +310,7 @@ body {
         .search-btn{
           padding: 5px 20px;
           background-color: var(--third-color);
+          color: #fff;
         }
       }
     }
@@ -322,6 +327,7 @@ footer {
     color: var(--secondary-color);
     font-style: normal;
     font-weight: 700;
+    font-size: 30px;
   }
   .footer-paragraph {
     color: var(--secondary-color);
@@ -533,6 +539,19 @@ footer {
         }
     }
 }
+#informasi{
+  .input-group{
+    .form-control{
+        outline: none;
+        font-size: 10px !important;
+    }
+    .search-btn{
+        padding: 3px 15px;
+        background-color: var(--third-color);
+        font-size: 10px;
+    }
+  }
+}
   #prestasi {
     .container {
       .row {
@@ -616,6 +635,28 @@ footer {
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and(max-width: 992px) {
+#informasi{
+    .input-group{
+      .form-control{
+          outline: none;
+          font-size: 13px;
+      }
+      .search-btn{
+          padding: 5px 20px;
+          background-color: var(--third-color);
+      }
+    }
+  }
+  footer{
+    .school-name {
+      color: var(--secondary-color);
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+}
 @media only screen and (min-width: 992px) {
   #page-name {
     background-color: var(--secondary-color);
@@ -635,6 +676,7 @@ footer {
       color: var(--secondary-color);
       font-style: normal;
       font-weight: 700;
+      font-size: 20px;
     }
     .footer-paragraph {
       color: var(--secondary-color);

@@ -92,6 +92,10 @@ body {
 #prestasi .container .row .title p {
   color: #fff;
 }
+#prestasi .container .row .title .btn {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
 #prestasi .container .row .data h2 {
   color: #fff;
   font-weight: 600;
@@ -240,6 +244,7 @@ body {
 #informasi .container .row .input-group .search-btn {
   padding: 5px 20px;
   background-color: var(--third-color);
+  color: #fff;
 }
 
 footer {
@@ -251,6 +256,7 @@ footer .school-name {
   color: var(--secondary-color);
   font-style: normal;
   font-weight: 700;
+  font-size: 30px;
 }
 footer .footer-paragraph {
   color: var(--secondary-color);
@@ -440,6 +446,15 @@ footer .vector4 {
   .navbar .container .collapse .navbar-nav .nav-link {
     font-size: 18px;
   }
+  #informasi .input-group .form-control {
+    outline: none;
+    font-size: 10px !important;
+  }
+  #informasi .input-group .search-btn {
+    padding: 3px 15px;
+    background-color: var(--third-color);
+    font-size: 10px;
+  }
   #prestasi .container .row .title {
     border-right: none;
     border-bottom: solid 2px #fff;
@@ -516,6 +531,22 @@ footer .vector4 {
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  #informasi .input-group .form-control {
+    outline: none;
+    font-size: 13px;
+  }
+  #informasi .input-group .search-btn {
+    padding: 5px 20px;
+    background-color: var(--third-color);
+  }
+  footer .school-name {
+    color: var(--secondary-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+  }
+}
 @media only screen and (min-width: 992px) {
   #page-name {
     background-color: var(--secondary-color);
@@ -535,6 +566,7 @@ footer .vector4 {
     color: var(--secondary-color);
     font-style: normal;
     font-weight: 700;
+    font-size: 20px;
   }
   footer .footer-paragraph {
     color: var(--secondary-color);

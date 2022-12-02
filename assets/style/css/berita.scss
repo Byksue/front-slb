@@ -3,11 +3,9 @@
 :root {
   /* color */
   --main-color: #ed7638;
-  --secondary-color: #2B7A0B;
-  --third-color:#F3C24C;
-  --fourth-color:#FFD779;
-
-;
+  --secondary-color: #2b7a0b;
+  --third-color: #f3c24c;
+  --fourth-color: #ffd779;
 }
 
 * {
@@ -22,7 +20,7 @@
 }
 
 body {
-  background-color: #e5e5e5;
+  background-color: #eefff2;
   overflow-x: hidden;
 }
 
@@ -75,14 +73,13 @@ body {
 #page-name {
   background-color: var(--fourth-color);
   overflow: hidden;
-  .kolom{
+  .kolom {
     .page-title {
-    font-weight: 700;
-    font-size: 32px;
-    color: var(--secondary-color);
+      font-weight: 700;
+      font-size: 32px;
+      color: var(--secondary-color);
+    }
   }
-  }
-  
 }
 
 // hero
@@ -108,93 +105,92 @@ body {
     width: 100%;
     position: absolute;
     top: 50%;
-    .input-group{
-      .search-btn{
+    .input-group {
+      .search-btn {
         background-color: var(--secondary-color);
         color: #fff;
       }
     }
   }
-  
 }
 
 // Main News
-#main-news{
-    .container{
-        .row{
-            .link-news{
-                background-color: rgb(255, 255, 255);
-                .news-body{
-                    .category{
-                        font-size: 16px;
-                        color: var(--main-color);
-                        text-decoration: dashed;
-                    }
-                    .text-news{
-                        .title{
-                            font-size: 35px;
-                            color: var(--main-color);
-                            font-weight: 600;
-                        }
-                        .deskripsi{
-                            font-size: 15px;
-                            color: var(--main-color);
-                            text-align: justify;
-                        }
-                    }
-                }
+#main-news {
+  .container {
+    .row {
+      .link-news {
+        background-color: rgb(255, 255, 255);
+        .news-body {
+          .category {
+            font-size: 16px;
+            color: var(--main-color);
+            text-decoration: dashed;
+          }
+          .text-news {
+            .title {
+              font-size: 35px;
+              color: var(--main-color);
+              font-weight: 600;
             }
-            .link-news:hover{
-                box-shadow: 0px 4px 6px #0000002d;
-                background-color: rgb(238, 238, 255);
+            .deskripsi {
+              font-size: 15px;
+              color: var(--main-color);
+              text-align: justify;
             }
+          }
         }
+      }
+      .link-news:hover {
+        box-shadow: 0px 4px 6px #0000002d;
+        background-color: rgb(238, 238, 255);
+      }
     }
+  }
 }
 
 // berita lainnya
-#berita-lain{
-    .container{
-        .row{
-            .info-detail{
-                .title{
-                    text-decoration: none;
-                    color: var(--main-color);
-                    font-size: 20px;
-                    font-weight: 600;
-                }
-            }
-            .berita{
-                .link{
-                    background-color: #ffffff;
-                    .card-news{
-                        .keterangan{
-                            p{
-                                color: var(--main-color);
-                            }
-                        }
-                        .body{
-                            .title{
-                                color: var(--main-color);
-                                font-weight: 600;
-                                font-size: 25px;
-                            }
-                            .text{
-                                color: var(--main-color);
-                                font-size: 15px;
-                            }
-                        }
-                    }
-                }
-                .link:hover{
-                    box-shadow: 0px 4px 6px #0000002d;
-                    background-color: rgb(238, 238, 255);
-                }
-            }
+#berita-lain {
+  .container {
+    .row {
+      .info-detail {
+        .title {
+          text-decoration: none;
+          color: var(--main-color);
+          font-size: 20px;
+          font-weight: 600;
         }
+      }
+      .berita {
+        .link {
+          background-color: #ffffff;
+          .card-news {
+            width: 30rem;
+            .keterangan {
+              p {
+                color: var(--main-color);
+              }
+            }
+            .body {
+              .title {
+                color: var(--main-color);
+                font-weight: 600;
+                font-size: 25px;
+              }
+              .text {
+                color: var(--main-color);
+                font-size: 15px;
+              }
+            }
+          }
+        }
+        .link:hover {
+          box-shadow: 0px 4px 6px #0000002d;
+          background-color: rgb(238, 238, 255);
+        }
+      }
     }
+  }
 }
-
 
 // Footer
 footer {
@@ -250,12 +246,11 @@ footer {
   }
 }
 
-
 // seting memphis
-.memphis-bawah{
+.memphis-bawah {
   z-index: -999;
 }
-.memphis-atas{
+.memphis-atas {
   z-index: 999;
 }
 
@@ -302,6 +297,40 @@ footer {
     .bi {
       color: var(--main-color);
       font-size: 14px;
+    }
+  }
+  #hero {
+    height: 550px;
+    background-image: url(/assets/img/hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    .bg-filter {
+      height: 550px;
+      background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+      transform: rotate(180deg);
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+    .hero-content {
+      bottom: 10%;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      .input-group {
+        .search-form-control{
+          font-size: 8px !important;
+        }
+        .search-btn {
+          background-color: var(--secondary-color);
+          color: #fff;
+          font-size: 8px !important;
+        }
+      }
     }
   }
   footer {
@@ -366,7 +395,7 @@ footer {
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    .navbar {
+  .navbar {
     .container {
       border-bottom: 3px solid var(--secondary-color);
       .bi {
@@ -479,14 +508,36 @@ footer {
       font-size: 14px;
     }
   }
-  #hero{
-    height: 70vh;
-    .container-fluid{
-      .row{
-        .search{
-          .search-btn{
-            font-size: 12px;
-          }
+  #hero {
+    height: 550px;
+    background-image: url(/assets/img/hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    .bg-filter {
+      height: 550px;
+      background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+      transform: rotate(180deg);
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+    .hero-content {
+      bottom: 10%;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      .input-group {
+        .search-form-control{
+          font-size: 11px;
+        }
+        .search-btn {
+          background-color: var(--secondary-color);
+          color: #fff;
+          font-size: 11px;
         }
       }
     }
@@ -504,7 +555,7 @@ footer {
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .navbar {
+  .navbar {
     .container {
       border-bottom: 3px solid var(--secondary-color);
       .bi {
@@ -616,16 +667,89 @@ footer {
   }
 }
 // max-width in tablet
-@media only screen and (max-width: 992px){
-  
-  #hero{
+@media only screen and (max-width: 992px) {
+  #hero {
     height: 60vh;
-
+  }
+  #main-news {
+    .container {
+      .row {
+        .link-news {
+          background-color: rgb(255, 255, 255);
+          .news-body {
+            .category {
+              font-size: 16px;
+              color: var(--main-color);
+              text-decoration: dashed;
+            }
+            .text-news {
+              .title {
+                font-size: 25px;
+                color: var(--main-color);
+                font-weight: 600;
+              }
+              .deskripsi {
+                font-size: 13px;
+                color: var(--main-color);
+                text-align: justify;
+              }
+            }
+          }
+        }
+        .link-news:hover {
+          box-shadow: 0px 4px 6px #0000002d;
+          background-color: rgb(238, 238, 255);
+        }
+      }
+    }
+  }
+  #berita-lain {
+    .container {
+      .row {
+        .info-detail {
+          .title {
+            text-decoration: none;
+            color: var(--main-color);
+            font-size: 20px;
+            font-weight: 600;
+          }
+        }
+        .berita {
+          .link {
+            background-color: #ffffff;
+            .card-news {
+              width: 22rem !important;
+              .keterangan {
+                p {
+                  color: var(--main-color);
+                  font-size: 10px;
+                }
+              }
+              .body {
+                .title {
+                  color: var(--main-color);
+                  font-weight: 600;
+                  font-size: 18px;
+                }
+                .text {
+                  color: var(--main-color);
+                  font-size: 10px;
+                }
+              }
+            }
+          }
+          .link:hover {
+            box-shadow: 0px 4px 6px #0000002d;
+            background-color: rgb(238, 238, 255);
+          }
+        }
+      }
+    }
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .navbar {
+  .navbar {
     .container {
       border-bottom: 3px solid var(--secondary-color);
       .bi {
@@ -729,10 +853,54 @@ footer {
     }
   }
 }
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  #berita-lain {
+    .container {
+      .row {
+        .info-detail {
+          .title {
+            text-decoration: none;
+            color: var(--main-color);
+            font-size: 20px;
+            font-weight: 600;
+          }
+        }
+        .berita {
+          .link {
+            background-color: #ffffff;
+            .card-news {
+              width: 25rem;
+              .keterangan {
+                p {
+                  color: var(--main-color);
+                  font-size: 15px;
+                }
+              }
+              .body {
+                .title {
+                  color: var(--main-color);
+                  font-weight: 600;
+                  font-size: 18px;
+                }
+                .text {
+                  color: var(--main-color);
+                  font-size: 10px;
+                }
+              }
+            }
+          }
+          .link:hover {
+            box-shadow: 0px 4px 6px #0000002d;
+            background-color: rgb(238, 238, 255);
+          }
+        }
+      }
+    }
+  }
+}
 @media only screen and (min-width: 1200px) {
-    .navbar {
+  .navbar {
     .container {
       border-bottom: 3px solid var(--secondary-color);
       .bi {
