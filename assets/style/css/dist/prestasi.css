@@ -1,0 +1,2241 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:ital,wght@0,400;0,700;1,400;1,600&display=swap");
+:root {
+  /* color */
+  --main-color: #ed7638;
+  --secondary-color: #ffd779;
+  --text-page-color: #2b7a0b;
+  --main-font: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: #000;
+  font-family: var(--main-font);
+}
+
+body {
+  background-color: #e5e5e5;
+  overflow-x: hidden;
+  text-decoration: none;
+}
+
+.navbar {
+  position: relative;
+}
+.navbar .container {
+  border-bottom: 3px solid var(--text-page-color);
+}
+.navbar .container .bi {
+  color: var(--main-color);
+}
+.navbar .container .navbar-brand img {
+  width: 100px;
+  height: 100px;
+}
+.navbar .container .collapse .navbar-nav .nav-link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: rgba(237, 118, 56, 0.5);
+}
+.navbar .container .collapse .navbar-nav .active {
+  color: var(--main-color);
+}
+
+.contact {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--main-color);
+  text-decoration: none;
+  border-radius: 99px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 5px 25px;
+  margin: 0 0;
+}
+.contact .bi {
+  color: var(--main-color);
+  font-size: 18px;
+}
+
+#page-name {
+  background-color: var(--secondary-color);
+  overflow: hidden;
+}
+#page-name .page-title {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--text-page-color);
+}
+
+#prestasi {
+  height: 550px;
+  background-image: url(/assets/img/prestasi-img.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+#prestasi .bg-filter {
+  height: 550px;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  transform: rotate(180deg);
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+#prestasi .prestasi-content {
+  position: absolute;
+  bottom: 10%;
+}
+#prestasi .prestasi-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  color: var(--secondary-color);
+}
+#prestasi .prestasi-paragraph {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: justify;
+  color: var(--secondary-color);
+}
+
+#prestasi-nasional {
+  position: relative;
+  overflow: hidden;
+}
+#prestasi-nasional .slide-prestasi-nasional {
+  position: relative;
+}
+#prestasi-nasional .prestasi-nasional-img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+#prestasi-nasional .prestasi-nasional-filter {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  border-radius: 50px;
+  transform: rotate(180deg);
+  position: absolute;
+  top: 0;
+}
+#prestasi-nasional .prestasi-nasional-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+  position: absolute;
+  bottom: 10%;
+}
+#prestasi-nasional .prestasi-nasional-title-up {
+  color: var(--main-color);
+  font-weight: 400;
+  font-size: 22px;
+}
+#prestasi-nasional .prestasi-nasional-title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  color: var(--main-color);
+}
+#prestasi-nasional .prestasi-nasional-btn {
+  color: #fff;
+  background-color: var(--text-page-color);
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px 30px;
+  text-decoration: none;
+}
+#prestasi-nasional .prestasi-nasional-vector1 {
+  width: 241px;
+  height: 219px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#prestasi-nasional .prestasi-nasional-vector2 {
+  width: 404.31px;
+  height: 180px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
+#prestasi-provinsi {
+  position: relative;
+  overflow: hidden;
+}
+#prestasi-provinsi .slide-prestasi-provinsi {
+  position: relative;
+}
+#prestasi-provinsi .prestasi-provinsi-img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+#prestasi-provinsi .prestasi-provinsi-filter {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  border-radius: 50px;
+  transform: rotate(180deg);
+  position: absolute;
+  top: 0;
+}
+#prestasi-provinsi .prestasi-provinsi-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+  position: absolute;
+  bottom: 10%;
+}
+#prestasi-provinsi .prestasi-provinsi-title-up {
+  color: var(--main-color);
+  font-weight: 400;
+  font-size: 22px;
+}
+#prestasi-provinsi .prestasi-provinsi-title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  color: var(--main-color);
+}
+#prestasi-provinsi .prestasi-provinsi-btn {
+  color: #fff;
+  background-color: var(--text-page-color);
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px 30px;
+  text-decoration: none;
+}
+#prestasi-provinsi .prestasi-provinsi-vector1 {
+  width: 201.47px;
+  height: 288.14px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 99;
+}
+#prestasi-provinsi .prestasi-provinsi-vector2 {
+  width: 220.23px;
+  height: 142.57px;
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+  z-index: 99;
+}
+#prestasi-provinsi .prestasi-provinsi-vector3 {
+  width: 156px;
+  height: 180px;
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  z-index: 99;
+}
+#prestasi-provinsi .prestasi-provinsi-vector4 {
+  width: 119.66px;
+  height: 333.31px;
+  position: absolute;
+  left: 0;
+  top: 10%;
+  z-index: 99;
+}
+
+#prestasi-daerah {
+  position: relative;
+  overflow: hidden;
+}
+#prestasi-daerah .slide-prestasi-daerah {
+  position: relative;
+}
+#prestasi-daerah .prestasi-daerah-img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+#prestasi-daerah .prestasi-daerah-filter {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  border-radius: 50px;
+  transform: rotate(180deg);
+  position: absolute;
+  top: 0;
+}
+#prestasi-daerah .prestasi-daerah-text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+  position: absolute;
+  bottom: 10%;
+}
+#prestasi-daerah .prestasi-daerah-title-up {
+  color: var(--main-color);
+  font-weight: 400;
+  font-size: 22px;
+}
+#prestasi-daerah .prestasi-daerah-title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  color: var(--main-color);
+}
+#prestasi-daerah .prestasi-daerah-btn {
+  color: #fff;
+  background-color: var(--text-page-color);
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px 30px;
+  text-decoration: none;
+}
+#prestasi-daerah .prestasi-daerah-vector1 {
+  width: 129.18px;
+  height: 107.6px;
+  position: absolute;
+  right: 0;
+  top: 10%;
+}
+#prestasi-daerah .prestasi-daerah-vector2 {
+  width: 107px;
+  height: 141.96px;
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+  z-index: 99;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  overflow: hidden;
+  position: relative;
+}
+footer .school-name {
+  color: var(--text-page-color);
+  font-style: normal;
+  font-weight: 700;
+}
+footer .footer-paragraph {
+  color: var(--text-page-color);
+}
+footer i {
+  padding-right: 10px;
+  color: #fff;
+}
+footer .footer-contact {
+  color: var(--text-page-color);
+}
+footer hr {
+  border: 2px solid #fff;
+}
+footer .vector1 {
+  width: 56.2px;
+  height: 53.36px;
+  position: absolute;
+  right: 50%;
+  top: 0;
+}
+footer .vector2 {
+  width: 460.49px;
+  height: 116.33px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+footer .vector3 {
+  width: 252.12px;
+  height: 142.61px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+footer .vector4 {
+  width: 60.46px;
+  height: 58.41px;
+  position: absolute;
+  left: 0;
+  top: 10%;
+}
+
+.teks-overlay {
+  top: 0;
+  bottom: 0;
+  width: 400px;
+  height: 400px;
+  border-radius: 50px;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: var(--secondary-color);
+}
+.teks-overlay .text {
+  color: var(--text-page-color);
+  font-weight: 600;
+  width: 90%;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.teks-overlay:hover {
+  opacity: 1;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .navbar .container {
+    border-bottom: 3px solid var(--text-page-color);
+  }
+  .navbar .container .bi {
+    color: var(--main-color);
+  }
+  .navbar .container .navbar-brand img {
+    width: 100px;
+    height: 100px;
+  }
+  .navbar .container .collapse .navbar-nav .nav-link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: rgba(237, 118, 56, 0.5);
+  }
+  .navbar .container .collapse .navbar-nav .active {
+    color: var(--main-color);
+  }
+
+  .contact {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--main-color);
+    text-decoration: none;
+    border-radius: 99px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 5px 25px;
+    margin: 0 -25px;
+  }
+  .contact .bi {
+    color: var(--main-color);
+    font-size: 14px;
+  }
+
+  #page-name {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+  }
+  #page-name .page-title {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--text-page-color);
+  }
+
+  #prestasi {
+    height: 300px;
+    background-image: url(/assets/img/prestasi-img.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+  }
+  #prestasi .bg-filter {
+    height: 300px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  #prestasi .prestasi-content {
+    position: absolute;
+    bottom: 10%;
+  }
+  #prestasi .prestasi-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--secondary-color);
+  }
+  #prestasi .prestasi-paragraph {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    text-align: justify;
+    color: var(--secondary-color);
+  }
+
+  #prestasi-nasional {
+    position: relative;
+    overflow: hidden;
+  }
+  #prestasi-nasional .slide-prestasi-nasional {
+    position: relative;
+  }
+  #prestasi-nasional .prestasi-nasional-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50px;
+  }
+  #prestasi-nasional .prestasi-nasional-filter {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 50px;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+  }
+  #prestasi-nasional .prestasi-nasional-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    color: #fff;
+    position: absolute;
+    bottom: 10%;
+  }
+  #prestasi-nasional .prestasi-nasional-title-up {
+    color: var(--main-color);
+    font-weight: 400;
+    font-size: 12px;
+  }
+  #prestasi-nasional .prestasi-nasional-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    color: var(--main-color);
+  }
+  #prestasi-nasional .prestasi-nasional-btn {
+    color: #fff;
+    background-color: var(--text-page-color);
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 10px;
+    padding: 6px 20px;
+    text-decoration: none;
+  }
+  #prestasi-nasional .prestasi-nasional-vector1 {
+    width: 71px;
+    height: 199px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+  }
+  #prestasi-nasional .prestasi-nasional-vector2 {
+    width: 104.31px;
+    height: 90px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+  }
+
+  #prestasi-provinsi {
+    position: relative;
+    overflow: hidden;
+  }
+  #prestasi-provinsi .slide-prestasi-provinsi {
+    position: relative;
+  }
+  #prestasi-provinsi .prestasi-provinsi-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50px;
+  }
+  #prestasi-provinsi .prestasi-provinsi-filter {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 50px;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+  }
+  #prestasi-provinsi .prestasi-provinsi-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    color: #fff;
+    position: absolute;
+    bottom: 10%;
+  }
+  #prestasi-provinsi .prestasi-provinsi-title-up {
+    color: var(--main-color);
+    font-weight: 400;
+    font-size: 12px;
+  }
+  #prestasi-provinsi .prestasi-provinsi-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    color: var(--main-color);
+  }
+  #prestasi-provinsi .prestasi-provinsi-btn {
+    color: #fff;
+    background-color: var(--text-page-color);
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 10px;
+    padding: 6px 20px;
+    text-decoration: none;
+  }
+  #prestasi-provinsi .prestasi-provinsi-vector1 {
+    width: 101.47px;
+    height: 288.14px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+  }
+  #prestasi-provinsi .prestasi-provinsi-vector2 {
+    width: 80.23px;
+    height: 62.57px;
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    z-index: 99;
+  }
+  #prestasi-provinsi .prestasi-provinsi-vector3 {
+    width: 56px;
+    height: 70px;
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    z-index: 99;
+  }
+  #prestasi-provinsi .prestasi-provinsi-vector4 {
+    width: 59.66px;
+    height: 233.31px;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    z-index: 99;
+  }
+
+  #prestasi-daerah {
+    position: relative;
+    overflow: hidden;
+  }
+  #prestasi-daerah .slide-prestasi-daerah {
+    position: relative;
+  }
+  #prestasi-daerah .prestasi-daerah-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50px;
+  }
+  #prestasi-daerah .prestasi-daerah-filter {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 50px;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+  }
+  #prestasi-daerah .prestasi-daerah-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    color: #fff;
+    position: absolute;
+    bottom: 10%;
+  }
+  #prestasi-daerah .prestasi-daerah-title-up {
+    color: var(--main-color);
+    font-weight: 400;
+    font-size: 12px;
+  }
+  #prestasi-daerah .prestasi-daerah-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    color: var(--main-color);
+  }
+  #prestasi-daerah .prestasi-daerah-btn {
+    color: #fff;
+    background-color: var(--text-page-color);
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 10px;
+    padding: 6px 20px;
+    text-decoration: none;
+  }
+  #prestasi-daerah .prestasi-daerah-vector1 {
+    width: 49.18px;
+    height: 207.6px;
+    position: absolute;
+    right: 0;
+    top: 10%;
+  }
+  #prestasi-daerah .prestasi-daerah-vector2 {
+    width: 37px;
+    height: 31.96px;
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+    z-index: 99;
+  }
+
+  footer {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+    position: relative;
+  }
+  footer .school-name {
+    color: var(--text-page-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+  }
+  footer .footer-paragraph {
+    color: var(--text-page-color);
+    font-size: 10px;
+    text-align: justify;
+  }
+  footer i {
+    padding-right: 10px;
+    color: #fff;
+  }
+  footer iframe {
+    height: 150px;
+  }
+  footer .footer-contact {
+    color: var(--text-page-color);
+    font-size: 10px;
+  }
+  footer hr {
+    border: 2px solid #fff;
+  }
+  footer .vector1 {
+    width: 56.2px;
+    height: 53.36px;
+    position: absolute;
+    right: 0;
+    top: 25%;
+  }
+  footer .vector2 {
+    width: 100.49px;
+    height: 26.33px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  footer .vector3 {
+    width: 52.12px;
+    height: 32.61px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  footer .vector4 {
+    width: 40.46px;
+    height: 58.41px;
+    position: absolute;
+    left: 0;
+    top: 25%;
+  }
+
+  .teks-overlay {
+    width: 150px;
+    height: 150px;
+  }
+  .teks-overlay .text {
+    font-weight: 600;
+    width: 90%;
+    font-size: 7px;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .navbar .container {
+    border-bottom: 3px solid var(--text-page-color);
+  }
+  .navbar .container .bi {
+    color: var(--main-color);
+  }
+  .navbar .container .navbar-brand img {
+    width: 100px;
+    height: 100px;
+  }
+  .navbar .container .collapse .navbar-nav .nav-link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: rgba(237, 118, 56, 0.5);
+  }
+  .navbar .container .collapse .navbar-nav .active {
+    color: var(--main-color);
+  }
+
+  .contact {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--main-color);
+    text-decoration: none;
+    border-radius: 99px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 5px 25px;
+    margin: 0 -25px;
+  }
+  .contact .bi {
+    color: var(--main-color);
+    font-size: 14px;
+  }
+
+  #page-name {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+  }
+  #page-name .page-title {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--text-page-color);
+  }
+
+  #prestasi {
+    height: 250px;
+    background-image: url(/assets/img/prestasi-img.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+  }
+  #prestasi .bg-filter {
+    height: 250px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  #prestasi .prestasi-content {
+    position: absolute;
+    bottom: 10%;
+  }
+  #prestasi .prestasi-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--secondary-color);
+  }
+  #prestasi .prestasi-paragraph {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    text-align: justify;
+    color: var(--secondary-color);
+  }
+
+  #prestasi-nasional {
+    position: relative;
+    overflow: hidden;
+  }
+  #prestasi-nasional .slide-prestasi-nasional {
+    position: relative;
+  }
+  #prestasi-nasional .prestasi-nasional-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50px;
+  }
+  #prestasi-nasional .prestasi-nasional-filter {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 50px;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+  }
+  #prestasi-nasional .prestasi-nasional-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+    position: absolute;
+    bottom: 10%;
+  }
+  #prestasi-nasional .prestasi-nasional-title-up {
+    color: var(--main-color);
+    font-weight: 400;
+    font-size: 16px;
+  }
+  #prestasi-nasional .prestasi-nasional-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    color: var(--main-color);
+  }
+  #prestasi-nasional .prestasi-nasional-btn {
+    color: #fff;
+    background-color: var(--text-page-color);
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 8px 30px;
+    text-decoration: none;
+  }
+  #prestasi-nasional .prestasi-nasional-vector1 {
+    width: 91px;
+    height: 199px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+  }
+  #prestasi-nasional .prestasi-nasional-vector2 {
+    width: 204.31px;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+  }
+
+  #prestasi-provinsi {
+    position: relative;
+    overflow: hidden;
+  }
+  #prestasi-provinsi .slide-prestasi-provinsi {
+    position: relative;
+  }
+  #prestasi-provinsi .prestasi-provinsi-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50px;
+  }
+  #prestasi-provinsi .prestasi-provinsi-filter {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 50px;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+  }
+  #prestasi-provinsi .prestasi-provinsi-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+    position: absolute;
+    bottom: 10%;
+  }
+  #prestasi-provinsi .prestasi-provinsi-title-up {
+    color: var(--main-color);
+    font-weight: 400;
+    font-size: 16px;
+  }
+  #prestasi-provinsi .prestasi-provinsi-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    color: var(--main-color);
+  }
+  #prestasi-provinsi .prestasi-provinsi-btn {
+    color: #fff;
+    background-color: var(--text-page-color);
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 8px 30px;
+    text-decoration: none;
+  }
+  #prestasi-provinsi .prestasi-provinsi-vector1 {
+    width: 101.47px;
+    height: 288.14px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+  }
+  #prestasi-provinsi .prestasi-provinsi-vector2 {
+    width: 120.23px;
+    height: 92.57px;
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    z-index: 99;
+  }
+  #prestasi-provinsi .prestasi-provinsi-vector3 {
+    width: 86px;
+    height: 120px;
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    z-index: 99;
+  }
+  #prestasi-provinsi .prestasi-provinsi-vector4 {
+    width: 59.66px;
+    height: 233.31px;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    z-index: 99;
+  }
+
+  #prestasi-daerah {
+    position: relative;
+    overflow: hidden;
+  }
+  #prestasi-daerah .slide-prestasi-daerah {
+    position: relative;
+  }
+  #prestasi-daerah .prestasi-daerah-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50px;
+  }
+  #prestasi-daerah .prestasi-daerah-filter {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 50px;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+  }
+  #prestasi-daerah .prestasi-daerah-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    color: #fff;
+    position: absolute;
+    bottom: 10%;
+  }
+  #prestasi-daerah .prestasi-daerah-title-up {
+    color: var(--main-color);
+    font-weight: 400;
+    font-size: 16px;
+  }
+  #prestasi-daerah .prestasi-daerah-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    color: var(--main-color);
+  }
+  #prestasi-daerah .prestasi-daerah-btn {
+    color: #fff;
+    background-color: var(--text-page-color);
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 8px 30px;
+    text-decoration: none;
+  }
+  #prestasi-daerah .prestasi-daerah-vector1 {
+    width: 89.18px;
+    height: 207.6px;
+    position: absolute;
+    right: 0;
+    top: 10%;
+  }
+  #prestasi-daerah .prestasi-daerah-vector2 {
+    width: 67px;
+    height: 141.96px;
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+    z-index: 99;
+  }
+
+  footer {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+    position: relative;
+  }
+  footer .school-name {
+    color: var(--text-page-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+  }
+  footer .footer-paragraph {
+    color: var(--text-page-color);
+    font-size: 10px;
+    text-align: justify;
+  }
+  footer i {
+    padding-right: 10px;
+    color: #fff;
+  }
+  footer iframe {
+    height: 150px;
+  }
+  footer .footer-contact {
+    color: var(--text-page-color);
+    font-size: 10px;
+  }
+  footer hr {
+    border: 2px solid #fff;
+  }
+  footer .vector1 {
+    width: 56.2px;
+    height: 53.36px;
+    position: absolute;
+    right: 50%;
+    top: 0;
+  }
+  footer .vector2 {
+    width: 190.49px;
+    height: 46.33px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  footer .vector3 {
+    width: 122.12px;
+    height: 72.61px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  footer .vector4 {
+    width: 60.46px;
+    height: 58.41px;
+    position: absolute;
+    left: 0;
+    top: 10%;
+  }
+
+  .teks-overlay {
+    width: 250px;
+    height: 250px;
+  }
+  .teks-overlay .text {
+    font-weight: 600;
+    width: 90%;
+    font-size: 10px;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .navbar .container {
+    border-bottom: 3px solid var(--text-page-color);
+  }
+  .navbar .container .bi {
+    color: var(--main-color);
+  }
+  .navbar .container .navbar-brand img {
+    width: 100px;
+    height: 100px;
+  }
+  .navbar .container .collapse .navbar-nav .nav-link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(237, 118, 56, 0.5);
+  }
+  .navbar .container .collapse .navbar-nav .active {
+    color: var(--main-color);
+  }
+
+  .contact {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--main-color);
+    text-decoration: none;
+    border-radius: 99px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 5px 25px;
+    margin: 0 -25px;
+  }
+  .contact .bi {
+    color: var(--main-color);
+    font-size: 14px;
+  }
+
+  #page-name {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+  }
+  #page-name .page-title {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--text-page-color);
+  }
+
+  #prestasi {
+    height: 400px;
+    background-image: url(/assets/img/prestasi-img.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+  }
+  #prestasi .bg-filter {
+    height: 400px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  #prestasi .prestasi-content {
+    position: absolute;
+    bottom: 10%;
+  }
+  #prestasi .prestasi-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--secondary-color);
+  }
+  #prestasi .prestasi-paragraph {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: justify;
+    color: var(--secondary-color);
+  }
+
+  #prestasi-nasional {
+    position: relative;
+    overflow: hidden;
+  }
+  #prestasi-nasional .slide-prestasi-nasional {
+    position: relative;
+  }
+  #prestasi-nasional .prestasi-nasional-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50px;
+  }
+  #prestasi-nasional .prestasi-nasional-filter {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 50px;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+  }
+  #prestasi-nasional .prestasi-nasional-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    bottom: 10%;
+  }
+  #prestasi-nasional .prestasi-nasional-title-up {
+    color: var(--main-color);
+    font-weight: 400;
+    font-size: 22px;
+  }
+  #prestasi-nasional .prestasi-nasional-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    color: var(--main-color);
+  }
+  #prestasi-nasional .prestasi-nasional-btn {
+    color: #fff;
+    background-color: var(--text-page-color);
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 8px 30px;
+    text-decoration: none;
+  }
+  #prestasi-nasional .prestasi-nasional-vector1 {
+    width: 121px;
+    height: 219px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+  }
+  #prestasi-nasional .prestasi-nasional-vector2 {
+    width: 254.31px;
+    height: 170px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+  }
+
+  #prestasi-provinsi {
+    position: relative;
+    overflow: hidden;
+  }
+  #prestasi-provinsi .slide-prestasi-provinsi {
+    position: relative;
+  }
+  #prestasi-provinsi .prestasi-provinsi-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50px;
+  }
+  #prestasi-provinsi .prestasi-provinsi-filter {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 50px;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+  }
+  #prestasi-provinsi .prestasi-provinsi-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    bottom: 10%;
+  }
+  #prestasi-provinsi .prestasi-provinsi-title-up {
+    color: var(--main-color);
+    font-weight: 400;
+    font-size: 22px;
+  }
+  #prestasi-provinsi .prestasi-provinsi-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    color: var(--main-color);
+  }
+  #prestasi-provinsi .prestasi-provinsi-btn {
+    color: #fff;
+    background-color: var(--text-page-color);
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 8px 30px;
+    text-decoration: none;
+  }
+  #prestasi-provinsi .prestasi-provinsi-vector1 {
+    width: 151.47px;
+    height: 288.14px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+  }
+  #prestasi-provinsi .prestasi-provinsi-vector2 {
+    width: 170.23px;
+    height: 112.57px;
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    z-index: 99;
+  }
+  #prestasi-provinsi .prestasi-provinsi-vector3 {
+    width: 106px;
+    height: 140px;
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    z-index: 99;
+  }
+  #prestasi-provinsi .prestasi-provinsi-vector4 {
+    width: 89.66px;
+    height: 283.31px;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    z-index: 99;
+  }
+
+  #prestasi-daerah {
+    position: relative;
+    overflow: hidden;
+  }
+  #prestasi-daerah .slide-prestasi-daerah {
+    position: relative;
+  }
+  #prestasi-daerah .prestasi-daerah-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50px;
+  }
+  #prestasi-daerah .prestasi-daerah-filter {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 50px;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+  }
+  #prestasi-daerah .prestasi-daerah-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    bottom: 10%;
+  }
+  #prestasi-daerah .prestasi-daerah-title-up {
+    color: var(--main-color);
+    font-weight: 400;
+    font-size: 22px;
+  }
+  #prestasi-daerah .prestasi-daerah-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    color: var(--main-color);
+  }
+  #prestasi-daerah .prestasi-daerah-btn {
+    color: #fff;
+    background-color: var(--text-page-color);
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 8px 30px;
+    text-decoration: none;
+  }
+  #prestasi-daerah .prestasi-daerah-vector1 {
+    width: 109.18px;
+    height: 207.6px;
+    position: absolute;
+    right: 0;
+    top: 10%;
+  }
+  #prestasi-daerah .prestasi-daerah-vector2 {
+    width: 97px;
+    height: 141.96px;
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+    z-index: 99;
+  }
+
+  footer {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+    position: relative;
+  }
+  footer .school-name {
+    color: var(--text-page-color);
+    font-style: normal;
+    font-weight: 700;
+  }
+  footer .footer-paragraph {
+    color: var(--text-page-color);
+  }
+  footer i {
+    padding-right: 10px;
+    color: #fff;
+  }
+  footer .footer-contact {
+    color: var(--text-page-color);
+  }
+  footer hr {
+    border: 2px solid #fff;
+  }
+  footer .vector1 {
+    width: 56.2px;
+    height: 53.36px;
+    position: absolute;
+    right: 50%;
+    top: 0;
+  }
+  footer .vector2 {
+    width: 330.49px;
+    height: 86.33px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  footer .vector3 {
+    width: 192.12px;
+    height: 102.61px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  footer .vector4 {
+    width: 60.46px;
+    height: 58.41px;
+    position: absolute;
+    left: 0;
+    top: 10%;
+  }
+
+  .teks-overlay {
+    width: 300px;
+    height: 300px;
+  }
+  .teks-overlay .text {
+    font-weight: 600;
+    width: 90%;
+    font-size: 15px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .navbar .container {
+    border-bottom: 3px solid var(--text-page-color);
+  }
+  .navbar .container .bi {
+    color: var(--main-color);
+  }
+  .navbar .container .navbar-brand img {
+    width: 100px;
+    height: 100px;
+  }
+  .navbar .container .collapse .navbar-nav .nav-link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(237, 118, 56, 0.5);
+  }
+  .navbar .container .collapse .navbar-nav .active {
+    color: var(--main-color);
+  }
+
+  .contact {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--main-color);
+    text-decoration: none;
+    border-radius: 99px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 5px 25px;
+    margin: 0 0;
+  }
+  .contact .bi {
+    color: var(--main-color);
+    font-size: 16px;
+  }
+
+  #page-name {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+  }
+  #page-name .page-title {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--text-page-color);
+  }
+
+  #prestasi {
+    height: 550px;
+    background-image: url(/assets/img/prestasi-img.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+  }
+  #prestasi .bg-filter {
+    height: 550px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  #prestasi .prestasi-content {
+    position: absolute;
+    bottom: 10%;
+  }
+  #prestasi .prestasi-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    color: var(--secondary-color);
+  }
+  #prestasi .prestasi-paragraph {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: justify;
+    color: var(--secondary-color);
+  }
+
+  #prestasi-nasional {
+    position: relative;
+    overflow: hidden;
+  }
+  #prestasi-nasional .slide-prestasi-nasional {
+    position: relative;
+  }
+  #prestasi-nasional .prestasi-nasional-img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50px;
+  }
+  #prestasi-nasional .prestasi-nasional-filter {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 50px;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+  }
+  #prestasi-nasional .prestasi-nasional-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    bottom: 10%;
+  }
+  #prestasi-nasional .prestasi-nasional-title-up {
+    color: var(--main-color);
+    font-weight: 400;
+    font-size: 22px;
+  }
+  #prestasi-nasional .prestasi-nasional-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    color: var(--main-color);
+  }
+  #prestasi-nasional .prestasi-nasional-btn {
+    color: #fff;
+    background-color: var(--text-page-color);
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 8px 30px;
+    text-decoration: none;
+  }
+  #prestasi-nasional .prestasi-nasional-vector1 {
+    width: 141px;
+    height: 219px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+  }
+  #prestasi-nasional .prestasi-nasional-vector2 {
+    width: 354.31px;
+    height: 220px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+  }
+
+  #prestasi-provinsi {
+    position: relative;
+    overflow: hidden;
+  }
+  #prestasi-provinsi .slide-prestasi-provinsi {
+    position: relative;
+  }
+  #prestasi-provinsi .prestasi-provinsi-img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50px;
+  }
+  #prestasi-provinsi .prestasi-provinsi-filter {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 50px;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+  }
+  #prestasi-provinsi .prestasi-provinsi-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    bottom: 10%;
+  }
+  #prestasi-provinsi .prestasi-provinsi-title-up {
+    color: var(--main-color);
+    font-weight: 400;
+    font-size: 22px;
+  }
+  #prestasi-provinsi .prestasi-provinsi-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    color: var(--main-color);
+  }
+  #prestasi-provinsi .prestasi-provinsi-btn {
+    color: #fff;
+    background-color: var(--text-page-color);
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 8px 30px;
+    text-decoration: none;
+  }
+  #prestasi-provinsi .prestasi-provinsi-vector1 {
+    width: 201.47px;
+    height: 288.14px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+  }
+  #prestasi-provinsi .prestasi-provinsi-vector2 {
+    width: 220.23px;
+    height: 142.57px;
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    z-index: 99;
+  }
+  #prestasi-provinsi .prestasi-provinsi-vector3 {
+    width: 156px;
+    height: 180px;
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    z-index: 99;
+  }
+  #prestasi-provinsi .prestasi-provinsi-vector4 {
+    width: 119.66px;
+    height: 333.31px;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    z-index: 99;
+  }
+
+  #prestasi-daerah {
+    position: relative;
+    overflow: hidden;
+  }
+  #prestasi-daerah .slide-prestasi-daerah {
+    position: relative;
+  }
+  #prestasi-daerah .prestasi-daerah-img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50px;
+  }
+  #prestasi-daerah .prestasi-daerah-filter {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 50px;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+  }
+  #prestasi-daerah .prestasi-daerah-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    bottom: 10%;
+  }
+  #prestasi-daerah .prestasi-daerah-title-up {
+    color: var(--main-color);
+    font-weight: 400;
+    font-size: 22px;
+  }
+  #prestasi-daerah .prestasi-daerah-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    color: var(--main-color);
+  }
+  #prestasi-daerah .prestasi-daerah-btn {
+    color: #fff;
+    background-color: var(--text-page-color);
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 8px 30px;
+    text-decoration: none;
+  }
+  #prestasi-daerah .prestasi-daerah-vector1 {
+    width: 129.18px;
+    height: 107.6px;
+    position: absolute;
+    right: 0;
+    top: 10%;
+  }
+  #prestasi-daerah .prestasi-daerah-vector2 {
+    width: 107px;
+    height: 141.96px;
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+    z-index: 99;
+  }
+
+  footer {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+    position: relative;
+  }
+  footer .school-name {
+    color: var(--text-page-color);
+    font-style: normal;
+    font-weight: 700;
+  }
+  footer .footer-paragraph {
+    color: var(--text-page-color);
+  }
+  footer i {
+    padding-right: 10px;
+    color: #fff;
+  }
+  footer .footer-contact {
+    color: var(--text-page-color);
+  }
+  footer hr {
+    border: 2px solid #fff;
+  }
+  footer .vector1 {
+    width: 56.2px;
+    height: 53.36px;
+    position: absolute;
+    right: 50%;
+    top: 0;
+  }
+  footer .vector2 {
+    width: 330.49px;
+    height: 86.33px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  footer .vector3 {
+    width: 192.12px;
+    height: 102.61px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  footer .vector4 {
+    width: 60.46px;
+    height: 58.41px;
+    position: absolute;
+    left: 0;
+    top: 10%;
+  }
+
+  .teks-overlay {
+    width: 400px;
+    height: 400px;
+  }
+  .teks-overlay .text {
+    font-weight: 600;
+    width: 90%;
+    font-size: 20px;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .navbar .container {
+    border-bottom: 3px solid var(--text-page-color);
+  }
+  .navbar .container .bi {
+    color: var(--main-color);
+  }
+  .navbar .container .navbar-brand img {
+    width: 100px;
+    height: 100px;
+  }
+  .navbar .container .collapse .navbar-nav .nav-link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: rgba(237, 118, 56, 0.5);
+  }
+  .navbar .container .collapse .navbar-nav .active {
+    color: var(--main-color);
+  }
+
+  .contact {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--main-color);
+    text-decoration: none;
+    border-radius: 99px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 5px 25px;
+    margin: 0 0;
+  }
+  .contact .bi {
+    color: var(--main-color);
+    font-size: 18px;
+  }
+
+  #page-name {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+  }
+  #page-name .page-title {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--text-page-color);
+  }
+
+  #prestasi {
+    height: 550px;
+    background-image: url(/assets/img/prestasi-img.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+  }
+  #prestasi .bg-filter {
+    height: 550px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  #prestasi .prestasi-content {
+    position: absolute;
+    bottom: 10%;
+  }
+  #prestasi .prestasi-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    color: var(--secondary-color);
+  }
+  #prestasi .prestasi-paragraph {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: justify;
+    color: var(--secondary-color);
+  }
+
+  #prestasi-nasional {
+    position: relative;
+    overflow: hidden;
+  }
+  #prestasi-nasional .slide-prestasi-nasional {
+    position: relative;
+  }
+  #prestasi-nasional .prestasi-nasional-img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50px;
+  }
+  #prestasi-nasional .prestasi-nasional-filter {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 50px;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+  }
+  #prestasi-nasional .prestasi-nasional-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    bottom: 10%;
+  }
+  #prestasi-nasional .prestasi-nasional-title-up {
+    color: var(--main-color);
+    font-weight: 400;
+    font-size: 22px;
+  }
+  #prestasi-nasional .prestasi-nasional-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    color: var(--main-color);
+  }
+  #prestasi-nasional .prestasi-nasional-btn {
+    color: #fff;
+    background-color: var(--text-page-color);
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 8px 30px;
+    text-decoration: none;
+  }
+  #prestasi-nasional .prestasi-provinsi-vector1 {
+    width: 201.47px;
+    height: 288.14px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+  }
+  #prestasi-nasional .prestasi-provinsi-vector2 {
+    width: 220.23px;
+    height: 142.57px;
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    z-index: 99;
+  }
+  #prestasi-nasional .prestasi-provinsi-vector3 {
+    width: 156px;
+    height: 180px;
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    z-index: 99;
+  }
+  #prestasi-nasional .prestasi-provinsi-vector4 {
+    width: 119.66px;
+    height: 333.31px;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    z-index: 99;
+  }
+
+  #prestasi-provinsi {
+    position: relative;
+    overflow: hidden;
+  }
+  #prestasi-provinsi .slide-prestasi-provinsi {
+    position: relative;
+  }
+  #prestasi-provinsi .prestasi-provinsi-img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50px;
+  }
+  #prestasi-provinsi .prestasi-provinsi-filter {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 50px;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+  }
+  #prestasi-provinsi .prestasi-provinsi-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    bottom: 10%;
+  }
+  #prestasi-provinsi .prestasi-provinsi-title-up {
+    color: var(--main-color);
+    font-weight: 400;
+    font-size: 22px;
+  }
+  #prestasi-provinsi .prestasi-provinsi-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    color: var(--main-color);
+  }
+  #prestasi-provinsi .prestasi-provinsi-btn {
+    color: #fff;
+    background-color: var(--text-page-color);
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 8px 30px;
+    text-decoration: none;
+  }
+  #prestasi-provinsi .prestasi-provinsi-vector1 {
+    width: 201.47px;
+    height: 288.14px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+  }
+  #prestasi-provinsi .prestasi-provinsi-vector2 {
+    width: 220.23px;
+    height: 142.57px;
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    z-index: 99;
+  }
+  #prestasi-provinsi .prestasi-provinsi-vector3 {
+    width: 156px;
+    height: 180px;
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    z-index: 99;
+  }
+  #prestasi-provinsi .prestasi-provinsi-vector4 {
+    width: 119.66px;
+    height: 333.31px;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    z-index: 99;
+  }
+
+  #prestasi-daerah {
+    position: relative;
+    overflow: hidden;
+  }
+  #prestasi-daerah .slide-prestasi-daerah {
+    position: relative;
+  }
+  #prestasi-daerah .prestasi-daerah-img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50px;
+  }
+  #prestasi-daerah .prestasi-daerah-filter {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 50px;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+  }
+  #prestasi-daerah .prestasi-daerah-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    position: absolute;
+    bottom: 10%;
+  }
+  #prestasi-daerah .prestasi-daerah-title-up {
+    color: var(--main-color);
+    font-weight: 400;
+    font-size: 22px;
+  }
+  #prestasi-daerah .prestasi-daerah-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    color: var(--main-color);
+  }
+  #prestasi-daerah .prestasi-daerah-btn {
+    color: #fff;
+    background-color: var(--text-page-color);
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 8px 30px;
+    text-decoration: none;
+  }
+  #prestasi-daerah .prestasi-daerah-vector1 {
+    width: 129.18px;
+    height: 107.6px;
+    position: absolute;
+    right: 0;
+    top: 10%;
+  }
+  #prestasi-daerah .prestasi-daerah-vector2 {
+    width: 107px;
+    height: 141.96px;
+    position: absolute;
+    left: 0;
+    bottom: 10%;
+    z-index: 99;
+  }
+
+  footer {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+    position: relative;
+  }
+  footer .school-name {
+    color: var(--text-page-color);
+    font-style: normal;
+    font-weight: 700;
+  }
+  footer .footer-paragraph {
+    color: var(--text-page-color);
+  }
+  footer i {
+    padding-right: 10px;
+    color: #fff;
+  }
+  footer .footer-contact {
+    color: var(--text-page-color);
+  }
+  footer hr {
+    border: 2px solid #fff;
+  }
+  footer .vector1 {
+    width: 56.2px;
+    height: 53.36px;
+    position: absolute;
+    right: 50%;
+    top: 0;
+  }
+  footer .vector2 {
+    width: 420.49px;
+    height: 106.33px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  footer .vector3 {
+    width: 252.12px;
+    height: 142.61px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  footer .vector4 {
+    width: 60.46px;
+    height: 58.41px;
+    position: absolute;
+    left: 0;
+    top: 10%;
+  }
+}

@@ -1,0 +1,651 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:ital,wght@0,400;0,700;1,400;1,600&display=swap");
+:root {
+  /* color */
+  --main-color: #ed7638;
+  --secondary-color: #2B7A0B;
+  --third-color:#F3C24C;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #e5e5e5;
+  overflow-x: hidden;
+}
+
+.navbar .container {
+  border-bottom: solid 2px var(--main-color);
+}
+.navbar .container .collapse .navbar-nav .nav-link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: rgba(237, 118, 56, 0.5);
+}
+.navbar .container .collapse .navbar-nav .nav-link:hover {
+  color: var(--main-color);
+}
+.navbar .container .collapse .navbar-nav .active {
+  color: var(--main-color);
+}
+
+.contact {
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--main-color);
+  text-decoration: none;
+  border-radius: 99px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 5px 25px;
+}
+.contact .bi {
+  color: var(--main-color);
+  font-size: 18px;
+}
+
+#beranda .container .row .konten h1 {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 39px;
+  color: var(--main-color);
+}
+#beranda .container .row .konten p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--main-color);
+}
+#beranda .container .row .konten .pelajari {
+  text-decoration: none;
+  background: var(--secondary-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px 25px;
+  font-family: "Inter", sans-serif;
+}
+
+#prestasi .container {
+  background-color: #f3c24c;
+  border: 2px solid #b2ebc1;
+  border-radius: 20px;
+}
+#prestasi .container .row .title {
+  border-right: solid 1.5px #fff;
+}
+#prestasi .container .row .title h2 {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 600;
+}
+#prestasi .container .row .title p {
+  color: #fff;
+}
+#prestasi .container .row .data h2 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 55px;
+  font-family: "Inter", sans-serif;
+}
+#prestasi .container .row .data p {
+  color: #fff;
+  font-size: 20px;
+}
+
+#vokeks .container .row .title h2 {
+  font-weight: 600;
+  font-size: 40px;
+  color: var(--main-color);
+}
+#vokeks .container .row .sub-title h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--main-color);
+}
+#vokeks .container .row .vokesk-col .card-vokeks .teks-overlay {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: var(--main-color);
+  border-radius: 10px;
+}
+#vokeks .container .row .vokesk-col .card-vokeks .teks-overlay .text {
+  width: 90%;
+  height: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#vokeks .container .row .vokesk-col .card-vokeks .teks-overlay .text h6 {
+  font-weight: 600;
+  color: #fff;
+  font-size: 20px;
+}
+#vokeks .container .row .vokesk-col .card-vokeks .teks-overlay .text p {
+  color: #fff;
+  font-size: 15px;
+  text-align: justify;
+}
+#vokeks .container .row .vokesk-col .card-vokeks .teks-overlay:hover {
+  opacity: 1;
+}
+#vokeks .container .row .vokesk-col .card-vokeks .card-body .card-text {
+  font-size: 25px;
+  color: var(--main-color);
+}
+
+#pengajar .container .row .konten h2 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 39px;
+  color: var(--main-color);
+}
+#pengajar .container .row .konten p {
+  font-size: 18px;
+  color: var(--main-color);
+}
+#pengajar .container .row .konten .detail {
+  text-decoration: none;
+  background: var(--secondary-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px 35px;
+  font-family: "Inter", sans-serif;
+}
+
+#berita .container .row .title h2 {
+  font-weight: 600;
+  font-size: 35px;
+  text-align: center;
+  color: var(--secondary-color);
+}
+#berita .container .row .card {
+  border: 2px solid var(--secondary-color);
+}
+#berita .container .row .card .card-body .card-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--secondary-color);
+}
+#berita .container .row .card .card-body .card-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--secondary-color);
+}
+#berita .container .row .card .card-body .detail {
+  font-family: "Inter", sans-serif;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 5px 15px;
+  font-size: 15px;
+  text-align: end;
+}
+#berita .container .row .card .card-body .detail .bi {
+  color: #fff;
+  font-size: 15px;
+}
+#berita .container .row .detail {
+  text-decoration: none;
+  background: var(--secondary-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 15px;
+  padding: 10px 35px;
+  font-family: "Inter", sans-serif;
+}
+
+#informasi .container {
+  background-color: var(--third-color);
+  border-radius: 50px;
+}
+#informasi .container .row h2 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 35px;
+}
+#informasi .container .row p {
+  color: #fff;
+  font-size: 20px;
+}
+#informasi .container .row .input-group .form-control {
+  outline: none;
+}
+#informasi .container .row .input-group .search-btn {
+  padding: 5px 20px;
+  background-color: var(--third-color);
+}
+
+footer {
+  background-color: var(--third-color);
+  overflow: hidden;
+  position: relative;
+}
+footer .school-name {
+  color: var(--secondary-color);
+  font-style: normal;
+  font-weight: 700;
+}
+footer .footer-paragraph {
+  color: var(--secondary-color);
+}
+footer i {
+  padding-right: 10px;
+  color: #fff;
+}
+footer .footer-contact {
+  color: var(--secondary-color);
+}
+footer hr {
+  border: 2px solid #fff;
+}
+footer .vector1 {
+  width: 56.2px;
+  height: 53.36px;
+  position: absolute;
+  right: 50%;
+  top: 0;
+}
+footer .vector2 {
+  width: 460.49px;
+  height: 116.33px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+footer .vector3 {
+  width: 252.12px;
+  height: 142.61px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+footer .vector4 {
+  width: 60.46px;
+  height: 58.41px;
+  position: absolute;
+  left: 0;
+  top: 10%;
+}
+
+.memphis-bawah {
+  z-index: -999;
+}
+
+.memphis-atas {
+  z-index: 999;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .navbar .container .collapse .navbar-nav .nav-link {
+    font-size: 18px;
+  }
+
+  footer {
+    background-color: var(--third-color);
+    overflow: hidden;
+    position: relative;
+  }
+  footer .school-name {
+    color: var(--secondary-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+  }
+  footer .footer-paragraph {
+    color: var(--secondary-color);
+    font-size: 10px;
+    text-align: justify;
+  }
+  footer i {
+    padding-right: 10px;
+    color: #fff;
+  }
+  footer iframe {
+    height: 150px;
+  }
+  footer .footer-contact {
+    color: var(--secondary-color);
+    font-size: 10px;
+  }
+  footer hr {
+    border: 2px solid #fff;
+  }
+  footer .vector1 {
+    width: 56.2px;
+    height: 53.36px;
+    position: absolute;
+    right: 0;
+    top: 25%;
+  }
+  footer .vector2 {
+    width: 100.49px;
+    height: 26.33px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  footer .vector3 {
+    width: 52.12px;
+    height: 32.61px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  footer .vector4 {
+    width: 40.46px;
+    height: 58.41px;
+    position: absolute;
+    left: 0;
+    top: 25%;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #page-name {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+  }
+  #page-name .page-title {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--secondary-color);
+  }
+
+  footer {
+    background-color: var(--third-color);
+    overflow: hidden;
+    position: relative;
+  }
+  footer .school-name {
+    color: var(--secondary-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+  }
+  footer .footer-paragraph {
+    color: var(--secondary-color);
+    font-size: 10px;
+    text-align: justify;
+  }
+  footer i {
+    padding-right: 10px;
+    color: #fff;
+  }
+  footer iframe {
+    height: 150px;
+  }
+  footer .footer-contact {
+    color: var(--secondary-color);
+    font-size: 10px;
+  }
+  footer hr {
+    border: 2px solid #fff;
+  }
+  footer .vector1 {
+    width: 56.2px;
+    height: 53.36px;
+    position: absolute;
+    right: 50%;
+    top: 0;
+  }
+  footer .vector2 {
+    width: 190.49px;
+    height: 46.33px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  footer .vector3 {
+    width: 122.12px;
+    height: 72.61px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  footer .vector4 {
+    width: 60.46px;
+    height: 58.41px;
+    position: absolute;
+    left: 0;
+    top: 10%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar .container .collapse .navbar-nav .nav-link {
+    font-size: 18px;
+  }
+
+  #prestasi .container .row .title {
+    border-right: none;
+    border-bottom: solid 2px #fff;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #page-name {
+    background-color: var(--third-color);
+    overflow: hidden;
+  }
+  #page-name .page-title {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--secondary-color);
+  }
+
+  footer {
+    background-color: var(--third-color);
+    overflow: hidden;
+    position: relative;
+  }
+  footer .school-name {
+    color: var(--secondary-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  footer .footer-paragraph {
+    color: var(--secondary-color);
+    font-size: 12px;
+    text-align: justify;
+  }
+  footer i {
+    padding-right: 10px;
+    color: #fff;
+  }
+  footer iframe {
+    height: 200px;
+  }
+  footer .footer-contact {
+    color: var(--secondary-color);
+    font-size: 12px;
+  }
+  footer hr {
+    border: 2px solid #fff;
+  }
+  footer .vector1 {
+    width: 56.2px;
+    height: 53.36px;
+    position: absolute;
+    right: 50%;
+    top: 0;
+  }
+  footer .vector2 {
+    width: 260.49px;
+    height: 66.33px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  footer .vector3 {
+    width: 152.12px;
+    height: 82.61px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  footer .vector4 {
+    width: 60.46px;
+    height: 58.41px;
+    position: absolute;
+    left: 0;
+    top: 10%;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #page-name {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+  }
+  #page-name .page-title {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--secondary-color);
+  }
+
+  footer {
+    background-color: var(--third-color);
+    overflow: hidden;
+    position: relative;
+  }
+  footer .school-name {
+    color: var(--secondary-color);
+    font-style: normal;
+    font-weight: 700;
+  }
+  footer .footer-paragraph {
+    color: var(--secondary-color);
+  }
+  footer i {
+    padding-right: 10px;
+    color: #fff;
+  }
+  footer .footer-contact {
+    color: var(--secondary-color);
+  }
+  footer hr {
+    border: 2px solid #fff;
+  }
+  footer .vector1 {
+    width: 56.2px;
+    height: 53.36px;
+    position: absolute;
+    right: 50%;
+    top: 0;
+  }
+  footer .vector2 {
+    width: 330.49px;
+    height: 86.33px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  footer .vector3 {
+    width: 192.12px;
+    height: 102.61px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  footer .vector4 {
+    width: 60.46px;
+    height: 58.41px;
+    position: absolute;
+    left: 0;
+    top: 10%;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #page-name {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+  }
+  #page-name .page-title {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--secondary-color);
+  }
+
+  footer {
+    background-color: var(--third-color);
+    overflow: hidden;
+    position: relative;
+  }
+  footer .school-name {
+    color: var(--secondary-color);
+    font-style: normal;
+    font-weight: 700;
+  }
+  footer .footer-paragraph {
+    color: var(--secondary-color);
+  }
+  footer i {
+    padding-right: 10px;
+    color: #fff;
+  }
+  footer .footer-contact {
+    color: var(--secondary-color);
+  }
+  footer hr {
+    border: 2px solid #fff;
+  }
+  footer .vector1 {
+    width: 56.2px;
+    height: 53.36px;
+    position: absolute;
+    right: 50%;
+    top: 0;
+  }
+  footer .vector2 {
+    width: 420.49px;
+    height: 106.33px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  footer .vector3 {
+    width: 252.12px;
+    height: 142.61px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  footer .vector4 {
+    width: 60.46px;
+    height: 58.41px;
+    position: absolute;
+    left: 0;
+    top: 10%;
+  }
+}

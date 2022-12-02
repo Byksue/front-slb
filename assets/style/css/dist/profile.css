@@ -1,0 +1,1641 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:ital,wght@0,400;0,700;1,400;1,600&display=swap");
+:root {
+  /* color */
+  --main-color: #ed7638;
+  --secondary-color: #ffd779;
+  --text-page-color: #2b7a0b;
+  --main-font: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: #000;
+  font-family: var(--main-font);
+}
+
+body {
+  background-color: #e5e5e5;
+  overflow-x: hidden;
+}
+
+.navbar .container .collapse .navbar-nav .nav-link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: rgba(237, 118, 56, 0.5);
+}
+.navbar .container .collapse .navbar-nav .nav-link:hover {
+  color: var(--main-color);
+}
+.navbar .container .collapse .navbar-nav .active {
+  color: var(--main-color);
+}
+
+.contact {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--main-color);
+  text-decoration: none;
+  border-radius: 99px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 5px 25px;
+}
+.contact .bi {
+  color: var(--main-color);
+  font-size: 18px;
+}
+
+#page-name {
+  background-color: var(--secondary-color);
+  overflow: hidden;
+}
+#page-name .page-title {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--text-page-color);
+}
+
+#sejarah {
+  height: 550px;
+  background-image: url(/assets/img/sejarah-img.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+#sejarah .bg-filter {
+  height: 550px;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  transform: rotate(180deg);
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+#sejarah .sejarah-content {
+  position: absolute;
+  bottom: 10%;
+}
+#sejarah .sejarah-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  color: var(--secondary-color);
+}
+#sejarah .sejarah-paragraph {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: justify;
+  color: var(--secondary-color);
+}
+
+#headmaster {
+  overflow: hidden;
+}
+#headmaster .headmaster-name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  color: var(--main-color);
+}
+#headmaster .headmaster-job {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--main-color);
+}
+#headmaster .headmaster-paragraph {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--main-color);
+  text-align: justify;
+}
+
+#instansi {
+  background-color: var(--secondary-color);
+  overflow: hidden;
+}
+
+#profile-school {
+  position: relative;
+  overflow: hidden;
+}
+#profile-school .profile-school-title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  color: var(--main-color);
+}
+#profile-school ul li {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--main-color);
+}
+#profile-school .vector1 {
+  height: 95.54px;
+  width: 353.32px;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+#profile-school .vector2 {
+  height: 43.73px;
+  width: 86.68px;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+}
+#profile-school .vector3 {
+  height: 173.03px;
+  width: 381.9px;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+}
+
+#visi {
+  position: relative;
+  overflow: hidden;
+}
+#visi .visi-content {
+  background-color: var(--secondary-color);
+  border-radius: 50px 0 0 50px;
+}
+#visi .visi-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--text-page-color);
+}
+#visi .visi-paragraph {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--text-page-color);
+  text-align: justify;
+}
+#visi .vector1 {
+  height: 209.31px;
+  width: 219.19px;
+  position: absolute;
+  right: 5%;
+  top: -50%;
+}
+#visi .vector2 {
+  height: 290.89px;
+  width: 212.8px;
+  position: absolute;
+  left: 5%;
+  bottom: 0;
+}
+
+#misi {
+  position: relative;
+  overflow: hidden;
+}
+#misi .misi-content {
+  background-color: var(--secondary-color);
+  border-radius: 0 50px 50px 0;
+  margin-bottom: 200px;
+}
+#misi .misi-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--text-page-color);
+}
+#misi .misi-paragraph {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--text-page-color);
+  text-align: justify;
+  padding-right: 100px;
+}
+#misi .vector1 {
+  height: 318.92px;
+  width: 382.05px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#misi .vector2 {
+  height: 327.01px;
+  width: 174.55px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+#misi .vector3 {
+  height: 208.12px;
+  width: 208.86px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+#misi .vector4 {
+  height: 220px;
+  width: 186px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  overflow: hidden;
+  position: relative;
+}
+footer .school-name {
+  color: var(--text-page-color);
+  font-style: normal;
+  font-weight: 700;
+}
+footer .footer-paragraph {
+  color: var(--text-page-color);
+}
+footer i {
+  padding-right: 10px;
+  color: #fff;
+}
+footer .footer-contact {
+  color: var(--text-page-color);
+}
+footer hr {
+  border: 2px solid #fff;
+}
+footer .vector1 {
+  width: 56.2px;
+  height: 53.36px;
+  position: absolute;
+  right: 50%;
+  top: 0;
+}
+footer .vector2 {
+  width: 460.49px;
+  height: 116.33px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+footer .vector3 {
+  width: 252.12px;
+  height: 142.61px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+footer .vector4 {
+  width: 60.46px;
+  height: 58.41px;
+  position: absolute;
+  left: 0;
+  top: 10%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .navbar .container .collapse .navbar-nav .nav-link {
+    font-size: 18px;
+  }
+
+  #page-name {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+  }
+  #page-name .page-title {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--text-page-color);
+  }
+
+  #sejarah {
+    height: 300px;
+    background-image: url(/assets/img/sejarah-img.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+  }
+  #sejarah .bg-filter {
+    height: 300px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  #sejarah .sejarah-content {
+    position: absolute;
+    bottom: 10%;
+  }
+  #sejarah .sejarah-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--secondary-color);
+  }
+  #sejarah .sejarah-paragraph {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    text-align: justify;
+    color: var(--secondary-color);
+  }
+
+  #headmaster {
+    overflow: hidden;
+  }
+  #headmaster .headmaster-name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--main-color);
+  }
+  #headmaster .headmaster-job {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--main-color);
+  }
+  #headmaster .headmaster-paragraph {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--main-color);
+    text-align: justify;
+  }
+
+  #instansi {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+  }
+
+  #profile-school {
+    position: relative;
+    overflow: hidden;
+  }
+  #profile-school .profile-school-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    color: var(--main-color);
+  }
+  #profile-school ul li {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    color: var(--main-color);
+  }
+  #profile-school .vector1 {
+    height: 45.54px;
+    width: 123.32px;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    z-index: 99;
+  }
+  #profile-school .vector2 {
+    height: 23.73px;
+    width: 36.68px;
+    position: absolute;
+    right: 5%;
+    top: 60%;
+    z-index: 99;
+  }
+  #profile-school .vector3 {
+    height: 133.03px;
+    width: 91.9px;
+    position: absolute;
+    left: 5%;
+    top: 0;
+    z-index: 99;
+  }
+
+  #visi {
+    position: relative;
+    overflow: hidden;
+  }
+  #visi .visi-content {
+    background-color: var(--secondary-color);
+    border-radius: 50px 0 0 50px;
+  }
+  #visi .visi-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    color: var(--text-page-color);
+  }
+  #visi .visi-paragraph {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    color: var(--text-page-color);
+    text-align: justify;
+  }
+  #visi .vector1 {
+    height: 139.31px;
+    width: 89.19px;
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    z-index: 99;
+  }
+  #visi .vector2 {
+    height: 220.89px;
+    width: 72.8px;
+    position: absolute;
+    left: 5%;
+    bottom: -35%;
+    z-index: 99;
+  }
+
+  #misi {
+    position: relative;
+    overflow: hidden;
+  }
+  #misi .misi-content {
+    background-color: var(--secondary-color);
+    border-radius: 0 50px 50px 0;
+    margin-bottom: 80px;
+  }
+  #misi .misi-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    color: var(--text-page-color);
+  }
+  #misi .misi-paragraph {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    color: var(--text-page-color);
+    text-align: justify;
+    padding-right: 0;
+  }
+  #misi .vector1 {
+    height: 318.92px;
+    width: 72.05px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+  }
+  #misi .vector2 {
+    height: 117.01px;
+    width: 54.55px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+  }
+  #misi .vector3 {
+    height: 98.12px;
+    width: 78.86px;
+    position: absolute;
+    right: 45%;
+    bottom: 7%;
+    z-index: 99;
+  }
+  #misi .vector4 {
+    height: 110px;
+    width: 56px;
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    z-index: 99;
+  }
+
+  footer {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+    position: relative;
+  }
+  footer .school-name {
+    color: var(--text-page-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+  }
+  footer .footer-paragraph {
+    color: var(--text-page-color);
+    font-size: 10px;
+    text-align: justify;
+  }
+  footer i {
+    padding-right: 10px;
+    color: #fff;
+  }
+  footer iframe {
+    height: 150px;
+  }
+  footer .footer-contact {
+    color: var(--text-page-color);
+    font-size: 10px;
+  }
+  footer hr {
+    border: 2px solid #fff;
+  }
+  footer .vector1 {
+    width: 56.2px;
+    height: 53.36px;
+    position: absolute;
+    right: 0;
+    top: 25%;
+  }
+  footer .vector2 {
+    width: 100.49px;
+    height: 26.33px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  footer .vector3 {
+    width: 52.12px;
+    height: 32.61px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  footer .vector4 {
+    width: 40.46px;
+    height: 58.41px;
+    position: absolute;
+    left: 0;
+    top: 25%;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #page-name {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+  }
+  #page-name .page-title {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--text-page-color);
+  }
+
+  #sejarah {
+    height: 250px;
+    background-image: url(/assets/img/sejarah-img.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+  }
+  #sejarah .bg-filter {
+    height: 250px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  #sejarah .sejarah-content {
+    position: absolute;
+    bottom: 10%;
+  }
+  #sejarah .sejarah-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--secondary-color);
+  }
+  #sejarah .sejarah-paragraph {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    text-align: justify;
+    color: var(--secondary-color);
+  }
+
+  #headmaster {
+    overflow: hidden;
+  }
+  #headmaster .headmaster-name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--main-color);
+  }
+  #headmaster .headmaster-job {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    color: var(--main-color);
+  }
+  #headmaster .headmaster-paragraph {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7px;
+    color: var(--main-color);
+    text-align: justify;
+  }
+
+  #instansi {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+  }
+
+  #profile-school {
+    position: relative;
+    overflow: hidden;
+  }
+  #profile-school .profile-school-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    color: var(--main-color);
+  }
+  #profile-school ul li {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    color: var(--main-color);
+  }
+  #profile-school .vector1 {
+    height: 45.54px;
+    width: 253.32px;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    z-index: 99;
+  }
+  #profile-school .vector2 {
+    height: 23.73px;
+    width: 36.68px;
+    position: absolute;
+    right: 5%;
+    top: 60%;
+    z-index: 99;
+  }
+  #profile-school .vector3 {
+    height: 133.03px;
+    width: 181.9px;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    z-index: 99;
+  }
+
+  #visi {
+    position: relative;
+    overflow: hidden;
+  }
+  #visi .visi-content {
+    background-color: var(--secondary-color);
+    border-radius: 50px 0 0 50px;
+  }
+  #visi .visi-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    color: var(--text-page-color);
+  }
+  #visi .visi-paragraph {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    color: var(--text-page-color);
+    text-align: justify;
+  }
+  #visi .vector1 {
+    height: 139.31px;
+    width: 89.19px;
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    z-index: 99;
+  }
+  #visi .vector2 {
+    height: 220.89px;
+    width: 72.8px;
+    position: absolute;
+    left: 5%;
+    bottom: -40%;
+    z-index: 99;
+  }
+
+  #misi {
+    position: relative;
+    overflow: hidden;
+  }
+  #misi .misi-content {
+    background-color: var(--secondary-color);
+    border-radius: 0 50px 50px 0;
+    margin-bottom: 80px;
+  }
+  #misi .misi-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    color: var(--text-page-color);
+  }
+  #misi .misi-paragraph {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    color: var(--text-page-color);
+    text-align: justify;
+    padding-right: 0;
+  }
+  #misi .vector1 {
+    height: 318.92px;
+    width: 72.05px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+  }
+  #misi .vector2 {
+    height: 117.01px;
+    width: 54.55px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+  }
+  #misi .vector3 {
+    height: 98.12px;
+    width: 78.86px;
+    position: absolute;
+    right: 45%;
+    bottom: 7%;
+    z-index: 99;
+  }
+  #misi .vector4 {
+    height: 110px;
+    width: 56px;
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    z-index: 99;
+  }
+
+  footer {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+    position: relative;
+  }
+  footer .school-name {
+    color: var(--text-page-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+  }
+  footer .footer-paragraph {
+    color: var(--text-page-color);
+    font-size: 10px;
+    text-align: justify;
+  }
+  footer i {
+    padding-right: 10px;
+    color: #fff;
+  }
+  footer iframe {
+    height: 150px;
+  }
+  footer .footer-contact {
+    color: var(--text-page-color);
+    font-size: 10px;
+  }
+  footer hr {
+    border: 2px solid #fff;
+  }
+  footer .vector1 {
+    width: 56.2px;
+    height: 53.36px;
+    position: absolute;
+    right: 50%;
+    top: 0;
+  }
+  footer .vector2 {
+    width: 190.49px;
+    height: 46.33px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  footer .vector3 {
+    width: 122.12px;
+    height: 72.61px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  footer .vector4 {
+    width: 60.46px;
+    height: 58.41px;
+    position: absolute;
+    left: 0;
+    top: 10%;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .navbar .container .collapse .navbar-nav .nav-link {
+    font-size: 18px;
+  }
+
+  #page-name {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+  }
+  #page-name .page-title {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--text-page-color);
+  }
+
+  #sejarah {
+    height: 550px;
+    background-image: url(/assets/img/sejarah-img.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+  }
+  #sejarah .bg-filter {
+    height: 550px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  #sejarah .sejarah-content {
+    position: absolute;
+    bottom: 10%;
+  }
+  #sejarah .sejarah-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--secondary-color);
+  }
+  #sejarah .sejarah-paragraph {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: justify;
+    color: var(--secondary-color);
+  }
+
+  #headmaster {
+    overflow: hidden;
+  }
+  #headmaster .headmaster-name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--main-color);
+  }
+  #headmaster .headmaster-job {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--main-color);
+  }
+  #headmaster .headmaster-paragraph {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: var(--main-color);
+    text-align: justify;
+  }
+
+  #instansi {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+  }
+
+  #profile-school {
+    position: relative;
+    overflow: hidden;
+  }
+  #profile-school .profile-school-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    color: var(--main-color);
+  }
+  #profile-school ul li {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--main-color);
+  }
+  #profile-school .vector1 {
+    height: 45.54px;
+    width: 253.32px;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    z-index: 99;
+  }
+  #profile-school .vector2 {
+    height: 23.73px;
+    width: 36.68px;
+    position: absolute;
+    right: 5%;
+    top: 60%;
+    z-index: 99;
+  }
+  #profile-school .vector3 {
+    height: 133.03px;
+    width: 241.9px;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    z-index: 99;
+  }
+
+  #visi {
+    position: relative;
+    overflow: hidden;
+  }
+  #visi .visi-content {
+    background-color: var(--secondary-color);
+    border-radius: 50px 0 0 50px;
+  }
+  #visi .visi-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--text-page-color);
+  }
+  #visi .visi-paragraph {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--text-page-color);
+    text-align: justify;
+  }
+  #visi .vector1 {
+    height: 139.31px;
+    width: 119.19px;
+    position: absolute;
+    right: 5%;
+    top: 0;
+    z-index: 99;
+  }
+  #visi .vector2 {
+    height: 220.89px;
+    width: 112.8px;
+    position: absolute;
+    left: 5%;
+    bottom: -5%;
+    z-index: 99;
+  }
+
+  #misi {
+    position: relative;
+    overflow: hidden;
+  }
+  #misi .misi-content {
+    background-color: var(--secondary-color);
+    border-radius: 0 50px 50px 0;
+    margin-bottom: 80px;
+  }
+  #misi .misi-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--text-page-color);
+  }
+  #misi .misi-paragraph {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--text-page-color);
+    text-align: justify;
+    padding-right: 100px;
+  }
+  #misi .vector1 {
+    height: 318.92px;
+    width: 182.05px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+  }
+  #misi .vector2 {
+    height: 187.01px;
+    width: 84.55px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+  }
+  #misi .vector3 {
+    height: 98.12px;
+    width: 118.86px;
+    position: absolute;
+    right: 45%;
+    bottom: 7%;
+    z-index: 99;
+  }
+  #misi .vector4 {
+    height: 110px;
+    width: 106px;
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+    z-index: 99;
+  }
+
+  footer {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+    position: relative;
+  }
+  footer .school-name {
+    color: var(--text-page-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  footer .footer-paragraph {
+    color: var(--text-page-color);
+    font-size: 12px;
+    text-align: justify;
+  }
+  footer i {
+    padding-right: 10px;
+    color: #fff;
+  }
+  footer iframe {
+    height: 200px;
+  }
+  footer .footer-contact {
+    color: var(--text-page-color);
+    font-size: 12px;
+  }
+  footer hr {
+    border: 2px solid #fff;
+  }
+  footer .vector1 {
+    width: 56.2px;
+    height: 53.36px;
+    position: absolute;
+    right: 50%;
+    top: 0;
+  }
+  footer .vector2 {
+    width: 260.49px;
+    height: 66.33px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  footer .vector3 {
+    width: 152.12px;
+    height: 82.61px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  footer .vector4 {
+    width: 60.46px;
+    height: 58.41px;
+    position: absolute;
+    left: 0;
+    top: 10%;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #page-name {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+  }
+  #page-name .page-title {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--text-page-color);
+  }
+
+  #sejarah {
+    height: 550px;
+    background-image: url(/assets/img/sejarah-img.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+  }
+  #sejarah .bg-filter {
+    height: 550px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  #sejarah .sejarah-content {
+    position: absolute;
+    bottom: 10%;
+  }
+  #sejarah .sejarah-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    color: var(--secondary-color);
+  }
+  #sejarah .sejarah-paragraph {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: justify;
+    color: var(--secondary-color);
+  }
+
+  #headmaster {
+    overflow: hidden;
+  }
+  #headmaster .headmaster-name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    color: var(--main-color);
+  }
+  #headmaster .headmaster-job {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--main-color);
+  }
+  #headmaster .headmaster-paragraph {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--main-color);
+    text-align: justify;
+  }
+
+  #instansi {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+  }
+
+  #profile-school {
+    position: relative;
+    overflow: hidden;
+  }
+  #profile-school .profile-school-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    color: var(--main-color);
+  }
+  #profile-school ul li {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--main-color);
+  }
+  #profile-school .vector1 {
+    height: 45.54px;
+    width: 303.32px;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    z-index: 99;
+  }
+  #profile-school .vector2 {
+    height: 23.73px;
+    width: 56.68px;
+    position: absolute;
+    right: 5%;
+    top: 60%;
+    z-index: 99;
+  }
+  #profile-school .vector3 {
+    height: 133.03px;
+    width: 331.9px;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    z-index: 99;
+  }
+
+  #visi {
+    position: relative;
+    overflow: hidden;
+  }
+  #visi .visi-content {
+    background-color: var(--secondary-color);
+    border-radius: 50px 0 0 50px;
+  }
+  #visi .visi-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-page-color);
+  }
+  #visi .visi-paragraph {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-page-color);
+    text-align: justify;
+  }
+  #visi .vector1 {
+    height: 139.31px;
+    width: 149.19px;
+    position: absolute;
+    right: 5%;
+    top: 0;
+    z-index: 99;
+  }
+  #visi .vector2 {
+    height: 220.89px;
+    width: 142.8px;
+    position: absolute;
+    left: 5%;
+    bottom: -5%;
+    z-index: 99;
+  }
+
+  #misi {
+    position: relative;
+    overflow: hidden;
+  }
+  #misi .misi-content {
+    background-color: var(--secondary-color);
+    border-radius: 0 50px 50px 0;
+    margin-bottom: 200px;
+  }
+  #misi .misi-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-page-color);
+  }
+  #misi .misi-paragraph {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-page-color);
+    text-align: justify;
+    padding-right: 100px;
+  }
+  #misi .vector1 {
+    height: 318.92px;
+    width: 282.05px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+  }
+  #misi .vector2 {
+    height: 277.01px;
+    width: 124.55px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+  }
+  #misi .vector3 {
+    height: 158.12px;
+    width: 158.86px;
+    position: absolute;
+    right: 45%;
+    bottom: 7%;
+    z-index: 99;
+  }
+  #misi .vector4 {
+    height: 170px;
+    width: 136px;
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+    z-index: 99;
+  }
+
+  footer {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+    position: relative;
+  }
+  footer .school-name {
+    color: var(--text-page-color);
+    font-style: normal;
+    font-weight: 700;
+  }
+  footer .footer-paragraph {
+    color: var(--text-page-color);
+  }
+  footer i {
+    padding-right: 10px;
+    color: #fff;
+  }
+  footer .footer-contact {
+    color: var(--text-page-color);
+  }
+  footer hr {
+    border: 2px solid #fff;
+  }
+  footer .vector1 {
+    width: 56.2px;
+    height: 53.36px;
+    position: absolute;
+    right: 50%;
+    top: 0;
+  }
+  footer .vector2 {
+    width: 330.49px;
+    height: 86.33px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  footer .vector3 {
+    width: 192.12px;
+    height: 102.61px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  footer .vector4 {
+    width: 60.46px;
+    height: 58.41px;
+    position: absolute;
+    left: 0;
+    top: 10%;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #page-name {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+  }
+  #page-name .page-title {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--text-page-color);
+  }
+
+  #sejarah {
+    height: 550px;
+    background-image: url(/assets/img/sejarah-img.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+  }
+  #sejarah .bg-filter {
+    height: 550px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  #sejarah .sejarah-content {
+    position: absolute;
+    bottom: 10%;
+  }
+  #sejarah .sejarah-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    color: var(--secondary-color);
+  }
+  #sejarah .sejarah-paragraph {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: justify;
+    color: var(--secondary-color);
+  }
+
+  #headmaster {
+    overflow: hidden;
+  }
+  #headmaster .headmaster-name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--main-color);
+  }
+  #headmaster .headmaster-job {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--main-color);
+  }
+  #headmaster .headmaster-paragraph {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--main-color);
+    text-align: justify;
+  }
+
+  #instansi {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+  }
+
+  #profile-school {
+    position: relative;
+    overflow: hidden;
+  }
+  #profile-school .profile-school-title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    color: var(--main-color);
+  }
+  #profile-school ul li {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--main-color);
+  }
+  #profile-school .vector1 {
+    height: 45.54px;
+    width: 303.32px;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    z-index: 99;
+  }
+  #profile-school .vector2 {
+    height: 23.73px;
+    width: 56.68px;
+    position: absolute;
+    right: 5%;
+    top: 60%;
+    z-index: 99;
+  }
+  #profile-school .vector3 {
+    height: 133.03px;
+    width: 331.9px;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    z-index: 99;
+  }
+
+  #visi {
+    position: relative;
+    overflow: hidden;
+  }
+  #visi .visi-content {
+    background-color: var(--secondary-color);
+    border-radius: 50px 0 0 50px;
+  }
+  #visi .visi-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--text-page-color);
+  }
+  #visi .visi-paragraph {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--text-page-color);
+    text-align: justify;
+  }
+  #visi .vector1 {
+    height: 139.31px;
+    width: 149.19px;
+    position: absolute;
+    right: 5%;
+    top: 0;
+    z-index: 99;
+  }
+  #visi .vector2 {
+    height: 220.89px;
+    width: 142.8px;
+    position: absolute;
+    left: 5%;
+    bottom: -5%;
+    z-index: 99;
+  }
+
+  #misi {
+    position: relative;
+    overflow: hidden;
+  }
+  #misi .misi-content {
+    background-color: var(--secondary-color);
+    border-radius: 0 50px 50px 0;
+    margin-bottom: 200px;
+  }
+  #misi .misi-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--text-page-color);
+  }
+  #misi .misi-paragraph {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--text-page-color);
+    text-align: justify;
+    padding-right: 100px;
+  }
+  #misi .vector1 {
+    height: 318.92px;
+    width: 282.05px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 99;
+  }
+  #misi .vector2 {
+    height: 277.01px;
+    width: 124.55px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+  }
+  #misi .vector3 {
+    height: 158.12px;
+    width: 158.86px;
+    position: absolute;
+    right: 45%;
+    bottom: 7%;
+    z-index: 99;
+  }
+  #misi .vector4 {
+    height: 170px;
+    width: 136px;
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+    z-index: 99;
+  }
+
+  footer {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+    position: relative;
+  }
+  footer .school-name {
+    color: var(--text-page-color);
+    font-style: normal;
+    font-weight: 700;
+  }
+  footer .footer-paragraph {
+    color: var(--text-page-color);
+  }
+  footer i {
+    padding-right: 10px;
+    color: #fff;
+  }
+  footer .footer-contact {
+    color: var(--text-page-color);
+  }
+  footer hr {
+    border: 2px solid #fff;
+  }
+  footer .vector1 {
+    width: 56.2px;
+    height: 53.36px;
+    position: absolute;
+    right: 50%;
+    top: 0;
+  }
+  footer .vector2 {
+    width: 420.49px;
+    height: 106.33px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  footer .vector3 {
+    width: 252.12px;
+    height: 142.61px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  footer .vector4 {
+    width: 60.46px;
+    height: 58.41px;
+    position: absolute;
+    left: 0;
+    top: 10%;
+  }
+}

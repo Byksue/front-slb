@@ -1,0 +1,878 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:ital,wght@0,400;0,700;1,400;1,600&display=swap");
+:root {
+  /* color */
+  --main-color: #ed7638;
+  --secondary-color: #2B7A0B;
+  --third-color:#F3C24C;
+  --fourth-color:#FFD779;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #e5e5e5;
+  overflow-x: hidden;
+}
+
+.navbar {
+  position: relative;
+}
+.navbar .container {
+  border-bottom: 3px solid var(--secondary-color);
+}
+.navbar .container .bi {
+  color: var(--main-color);
+}
+.navbar .container .navbar-brand img {
+  width: 100px;
+  height: 100px;
+}
+.navbar .container .collapse .navbar-nav .nav-link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: rgba(237, 118, 56, 0.5);
+}
+.navbar .container .collapse .navbar-nav .active {
+  color: var(--main-color);
+}
+
+.contact {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--main-color);
+  text-decoration: none;
+  border-radius: 99px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 5px 25px;
+  margin: 0 0;
+}
+.contact .bi {
+  color: var(--main-color);
+  font-size: 18px;
+}
+
+#page-name {
+  background-color: var(--fourth-color);
+  overflow: hidden;
+}
+#page-name .kolom .page-title {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--secondary-color);
+}
+
+#hero {
+  height: 550px;
+  background-image: url(/assets/img/hero.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+#hero .bg-filter {
+  height: 550px;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  transform: rotate(180deg);
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+#hero .hero-content {
+  position: absolute;
+  bottom: 10%;
+}
+#hero .hero-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  color: var(--fourth-color);
+}
+#hero .hero-paragraph {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: justify;
+  color: var(--fourth-color);
+}
+
+#guru1 .container .row .konten h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--main-color);
+}
+#guru1 .container .row .konten h6 {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--main-color);
+}
+#guru1 .container .row .konten p {
+  font-size: 18px;
+  color: var(--main-color);
+  text-align: justify;
+}
+
+#guru2 .container .row .konten h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--main-color);
+}
+#guru2 .container .row .konten h6 {
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--main-color);
+}
+#guru2 .container .row .konten p {
+  font-size: 18px;
+  color: var(--main-color);
+  text-align: justify;
+}
+
+#video .container-fluid .row .title h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--main-color);
+}
+#video .container-fluid .row .video .img-video {
+  object-fit: cover;
+}
+#video .container-fluid .row .video .filter {
+  height: 100%;
+  width: 30%;
+  background: linear-gradient(83.42deg, #2B7A0B 5.17%, #ffffff00 72.31%);
+}
+#video .container-fluid .row .video .deks h2 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 80px;
+}
+#video .container-fluid .row .video .deks h6 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 15px;
+}
+#video .container-fluid .row .video .deks p {
+  color: #fff;
+  font-size: 18px;
+}
+#video .container-fluid .row .video .deks .btn-play {
+  color: var(--main-color);
+  font-size: 18px;
+  background-color: #fff;
+  padding: 5px 25px;
+}
+#video .container-fluid .row .video .deks .btn-play i {
+  color: var(--main-color);
+  font-size: 18px;
+}
+
+footer {
+  background-color: var(--third-color);
+  overflow: hidden;
+  position: relative;
+}
+footer .school-name {
+  color: var(--secondary-color);
+  font-style: normal;
+  font-weight: 700;
+}
+footer .footer-paragraph {
+  color: var(--secondary-color);
+}
+footer i {
+  padding-right: 10px;
+  color: #fff;
+}
+footer .footer-contact {
+  color: var(--secondary-color);
+}
+footer hr {
+  border: 2px solid #fff;
+}
+footer .vector1 {
+  width: 56.2px;
+  height: 53.36px;
+  position: absolute;
+  right: 50%;
+  top: 0;
+}
+footer .vector2 {
+  width: 460.49px;
+  height: 116.33px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+footer .vector3 {
+  width: 252.12px;
+  height: 142.61px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+footer .vector4 {
+  width: 60.46px;
+  height: 58.41px;
+  position: absolute;
+  left: 0;
+  top: 10%;
+}
+
+.memphis-bawah {
+  z-index: -999;
+}
+
+.memphis-atas {
+  z-index: 999;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .navbar .container {
+    border-bottom: 3px solid var(--secondary-color);
+  }
+  .navbar .container .bi {
+    color: var(--main-color);
+  }
+  .navbar .container .navbar-brand img {
+    width: 100px;
+    height: 100px;
+  }
+  .navbar .container .collapse .navbar-nav .nav-link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: rgba(237, 118, 56, 0.5);
+  }
+  .navbar .container .collapse .navbar-nav .active {
+    color: var(--main-color);
+  }
+
+  .contact {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--main-color);
+    text-decoration: none;
+    border-radius: 99px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 5px 25px;
+    margin: 0 -25px;
+  }
+  .contact .bi {
+    color: var(--main-color);
+    font-size: 14px;
+  }
+
+  #hero {
+    height: 300px;
+    background-image: url(/assets/img/hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+  }
+  #hero .bg-filter {
+    height: 300px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  #hero .hero-content {
+    position: absolute;
+    bottom: 10%;
+  }
+  #hero .hero-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--fourth-color);
+  }
+  #hero .hero-paragraph {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    text-align: justify;
+    color: var(--fourth-color);
+  }
+
+  footer {
+    background-color: var(--third-color);
+    overflow: hidden;
+    position: relative;
+  }
+  footer .school-name {
+    color: var(--secondary-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+  }
+  footer .footer-paragraph {
+    color: var(--secondary-color);
+    font-size: 10px;
+    text-align: justify;
+  }
+  footer i {
+    padding-right: 10px;
+    color: #fff;
+  }
+  footer iframe {
+    height: 150px;
+  }
+  footer .footer-contact {
+    color: var(--secondary-color);
+    font-size: 10px;
+  }
+  footer hr {
+    border: 2px solid #fff;
+  }
+  footer .vector1 {
+    width: 56.2px;
+    height: 53.36px;
+    position: absolute;
+    right: 0;
+    top: 25%;
+  }
+  footer .vector2 {
+    width: 100.49px;
+    height: 26.33px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  footer .vector3 {
+    width: 52.12px;
+    height: 32.61px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  footer .vector4 {
+    width: 40.46px;
+    height: 58.41px;
+    position: absolute;
+    left: 0;
+    top: 25%;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #page-name {
+    background-color: var(--fourth-color);
+    overflow: hidden;
+  }
+  #page-name .page-title {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--secondary-color);
+  }
+
+  #hero {
+    height: 250px;
+    background-image: url(/assets/img/hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+  }
+  #hero .bg-filter {
+    height: 250px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  #hero .hero-content {
+    position: absolute;
+    bottom: 10%;
+  }
+  #hero .hero-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--fourth-color);
+  }
+  #hero .hero-paragraph {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    text-align: justify;
+    color: var(--fourth-color);
+  }
+
+  footer {
+    background-color: var(--third-color);
+    overflow: hidden;
+    position: relative;
+  }
+  footer .school-name {
+    color: var(--secondary-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+  }
+  footer .footer-paragraph {
+    color: var(--secondary-color);
+    font-size: 10px;
+    text-align: justify;
+  }
+  footer i {
+    padding-right: 10px;
+    color: #fff;
+  }
+  footer iframe {
+    height: 150px;
+  }
+  footer .footer-contact {
+    color: var(--secondary-color);
+    font-size: 10px;
+  }
+  footer hr {
+    border: 2px solid #fff;
+  }
+  footer .vector1 {
+    width: 56.2px;
+    height: 53.36px;
+    position: absolute;
+    right: 50%;
+    top: 0;
+  }
+  footer .vector2 {
+    width: 190.49px;
+    height: 46.33px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  footer .vector3 {
+    width: 122.12px;
+    height: 72.61px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  footer .vector4 {
+    width: 60.46px;
+    height: 58.41px;
+    position: absolute;
+    left: 0;
+    top: 10%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar .container .collapse .navbar-nav .nav-link {
+    font-size: 18px;
+  }
+
+  #guru2 .container .row {
+    flex-direction: column-reverse;
+  }
+
+  .memphis-awan4, .memphis-ballon6 {
+    display: none;
+  }
+
+  #guru2 .memphis-ballon5, #guru2 .memphis-ballon3 {
+    width: 60%;
+  }
+
+  #guru1 .memphis-anak9 {
+    width: 40%;
+    margin: 0 0 0 50px;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .navbar .container {
+    border-bottom: 3px solid var(--secondary-color);
+  }
+  .navbar .container .bi {
+    color: var(--main-color);
+  }
+  .navbar .container .navbar-brand img {
+    width: 100px;
+    height: 100px;
+  }
+  .navbar .container .collapse .navbar-nav .nav-link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(237, 118, 56, 0.5);
+  }
+  .navbar .container .collapse .navbar-nav .active {
+    color: var(--main-color);
+  }
+
+  #page-name {
+    background-color: var(--fourth-color);
+    overflow: hidden;
+  }
+  #page-name .page-title {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--secondary-color);
+  }
+
+  #hero {
+    height: 550px;
+    background-image: url(/assets/img/hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+  }
+  #hero .bg-filter {
+    height: 550px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  #hero .hero-content {
+    position: absolute;
+    bottom: 10%;
+  }
+  #hero .hero-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--fourth-color);
+  }
+  #hero .hero-paragraph {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: justify;
+    color: var(--fourth-color);
+  }
+
+  footer {
+    background-color: var(--third-color);
+    overflow: hidden;
+    position: relative;
+  }
+  footer .school-name {
+    color: var(--secondary-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+  }
+  footer .footer-paragraph {
+    color: var(--secondary-color);
+    font-size: 12px;
+    text-align: justify;
+  }
+  footer i {
+    padding-right: 10px;
+    color: #fff;
+  }
+  footer iframe {
+    height: 200px;
+  }
+  footer .footer-contact {
+    color: var(--secondary-color);
+    font-size: 12px;
+  }
+  footer hr {
+    border: 2px solid #fff;
+  }
+  footer .vector1 {
+    width: 56.2px;
+    height: 53.36px;
+    position: absolute;
+    right: 50%;
+    top: 0;
+  }
+  footer .vector2 {
+    width: 260.49px;
+    height: 66.33px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  footer .vector3 {
+    width: 152.12px;
+    height: 82.61px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  footer .vector4 {
+    width: 60.46px;
+    height: 58.41px;
+    position: absolute;
+    left: 0;
+    top: 10%;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .navbar .container {
+    border-bottom: 3px solid var(--secondary-color);
+  }
+  .navbar .container .bi {
+    color: var(--main-color);
+  }
+  .navbar .container .navbar-brand img {
+    width: 100px;
+    height: 100px;
+  }
+  .navbar .container .collapse .navbar-nav .nav-link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(237, 118, 56, 0.5);
+  }
+  .navbar .container .collapse .navbar-nav .active {
+    color: var(--main-color);
+  }
+
+  #page-name {
+    background-color: var(--fourth-color);
+    overflow: hidden;
+  }
+  #page-name .page-title {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--secondary-color);
+  }
+
+  #hero {
+    height: 550px;
+    background-image: url(/assets/img/hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+  }
+  #hero .bg-filter {
+    height: 550px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  #hero .hero-content {
+    position: absolute;
+    bottom: 10%;
+  }
+  #hero .hero-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    color: var(--fourth-color);
+  }
+  #hero .hero-paragraph {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: justify;
+    color: var(--fourth-color);
+  }
+
+  footer {
+    background-color: var(--third-color);
+    overflow: hidden;
+    position: relative;
+  }
+  footer .school-name {
+    color: var(--secondary-color);
+    font-style: normal;
+    font-weight: 700;
+  }
+  footer .footer-paragraph {
+    color: var(--secondary-color);
+  }
+  footer i {
+    padding-right: 10px;
+    color: #fff;
+  }
+  footer .footer-contact {
+    color: var(--secondary-color);
+  }
+  footer hr {
+    border: 2px solid #fff;
+  }
+  footer .vector1 {
+    width: 56.2px;
+    height: 53.36px;
+    position: absolute;
+    right: 50%;
+    top: 0;
+  }
+  footer .vector2 {
+    width: 330.49px;
+    height: 86.33px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  footer .vector3 {
+    width: 192.12px;
+    height: 102.61px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  footer .vector4 {
+    width: 60.46px;
+    height: 58.41px;
+    position: absolute;
+    left: 0;
+    top: 10%;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .navbar .container {
+    border-bottom: 3px solid var(--secondary-color);
+  }
+  .navbar .container .bi {
+    color: var(--main-color);
+  }
+  .navbar .container .navbar-brand img {
+    width: 100px;
+    height: 100px;
+  }
+  .navbar .container .collapse .navbar-nav .nav-link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: rgba(237, 118, 56, 0.5);
+  }
+  .navbar .container .collapse .navbar-nav .active {
+    color: var(--main-color);
+  }
+
+  .contact {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--main-color);
+    text-decoration: none;
+    border-radius: 99px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 5px 25px;
+    margin: 0 0;
+  }
+  .contact .bi {
+    color: var(--main-color);
+    font-size: 18px;
+  }
+
+  #page-name {
+    background-color: var(--fourth-color);
+    overflow: hidden;
+  }
+  #page-name .page-title {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--secondary-color);
+  }
+
+  #hero {
+    height: 550px;
+    background-image: url(/assets/img/hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+  }
+  #hero .bg-filter {
+    height: 550px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  #hero .hero-content {
+    position: absolute;
+    bottom: 10%;
+  }
+  #hero .hero-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    color: var(--fourth-color);
+  }
+  #hero .hero-paragraph {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: justify;
+    color: var(--fourth-color);
+  }
+
+  footer {
+    background-color: var(--third-color);
+    overflow: hidden;
+    position: relative;
+  }
+  footer .school-name {
+    color: var(--secondary-color);
+    font-style: normal;
+    font-weight: 700;
+  }
+  footer .footer-paragraph {
+    color: var(--secondary-color);
+  }
+  footer i {
+    padding-right: 10px;
+    color: #fff;
+  }
+  footer .footer-contact {
+    color: var(--secondary-color);
+  }
+  footer hr {
+    border: 2px solid #fff;
+  }
+  footer .vector1 {
+    width: 56.2px;
+    height: 53.36px;
+    position: absolute;
+    right: 50%;
+    top: 0;
+  }
+  footer .vector2 {
+    width: 420.49px;
+    height: 106.33px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  footer .vector3 {
+    width: 252.12px;
+    height: 142.61px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  footer .vector4 {
+    width: 60.46px;
+    height: 58.41px;
+    position: absolute;
+    left: 0;
+    top: 10%;
+  }
+}
