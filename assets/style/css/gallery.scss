@@ -303,6 +303,7 @@ footer {
     color: var(--text-page-color);
     font-style: normal;
     font-weight: 700;
+    font-size: 30px;
   }
   .footer-paragraph {
     color: var(--text-page-color);
@@ -738,7 +739,6 @@ footer {
       color: var(--secondary-color);
     }
   }
-
   #sarana-prasarana {
     position: relative;
     overflow: hidden;
@@ -1041,7 +1041,6 @@ footer {
       color: var(--secondary-color);
     }
   }
-
   #sarana-prasarana {
     position: relative;
     overflow: hidden;
@@ -1128,18 +1127,18 @@ footer {
     }
 
     footer {
-      background-color: var(--secondary-color);
+      background-color: var(--third-color);
       overflow: hidden;
       position: relative;
-
+  
       .school-name {
-        color: var(--text-page-color);
+        color: var(--secondary-color);
         font-style: normal;
         font-weight: 700;
         font-size: 12px;
       }
       .footer-paragraph {
-        color: var(--text-page-color);
+        color: var(--secondary-color);
         font-size: 12px;
         text-align: justify;
       }
@@ -1151,7 +1150,7 @@ footer {
         height: 200px;
       }
       .footer-contact {
-        color: var(--text-page-color);
+        color: var(--secondary-color);
         font-size: 12px;
       }
       hr {
@@ -1256,9 +1255,91 @@ footer {
       top: 15%;
     }
   }
+  footer {
+    background-color: var(--secondary-color);
+    overflow: hidden;
+    position: relative;
+
+    .school-name {
+      color: var(--text-page-color);
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+    }
+    .footer-paragraph {
+      color: var(--text-page-color);
+      font-size: 12px;
+      text-align: justify;
+    }
+    i {
+      padding-right: 10px;
+      color: #fff;
+    }
+    iframe {
+      height: 200px;
+    }
+    .footer-contact {
+      color: var(--text-page-color);
+      font-size: 12px;
+    }
+    hr {
+      border: 2px solid #fff;
+    }
+    .vector1 {
+      width: 56.2px;
+      height: 53.36px;
+      position: absolute;
+      right: 50%;
+      top: 0;
+    }
+    .vector2 {
+      width: 260.49px;
+      height: 66.33px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+    .vector3 {
+      width: 152.12px;
+      height: 82.61px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+    .vector4 {
+      width: 60.46px;
+      height: 58.41px;
+      position: absolute;
+      left: 0;
+      top: 10%;
+    }
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and(max-width: 992px) {
+  footer {
+    .school-name {
+      color: var(--text-page-color);
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .footer-paragraph {
+      color: var(--text-page-color);
+      font-size: 13px;
+    }
+    i {
+      padding-right: 10px;
+      color: #fff;
+      font-size: 13px;
+    }
+    .footer-contact {
+      color: var(--text-page-color);
+      font-size: 13px;
+    }
+  }
+}
 @media only screen and (min-width: 992px) {
   .navbar {
     .container {
@@ -1501,7 +1582,6 @@ footer {
       top: 15%;
     }
   }
-
   footer {
     background-color: var(--secondary-color);
     overflow: hidden;
@@ -1511,6 +1591,7 @@ footer {
       color: var(--text-page-color);
       font-style: normal;
       font-weight: 700;
+      font-size: 20px;
     }
     .footer-paragraph {
       color: var(--text-page-color);
@@ -1642,7 +1723,6 @@ footer {
       color: var(--secondary-color);
     }
   }
-
   #sarana-prasarana {
     position: relative;
     overflow: hidden;
@@ -1788,7 +1868,6 @@ footer {
       top: 15%;
     }
   }
-
   footer {
     background-color: var(--secondary-color);
     overflow: hidden;
@@ -1801,13 +1880,16 @@ footer {
     }
     .footer-paragraph {
       color: var(--text-page-color);
+      font-size: 14px;
     }
     i {
       padding-right: 10px;
       color: #fff;
+      font-size: 14px;
     }
     .footer-contact {
       color: var(--text-page-color);
+      font-size: 14px;
     }
     hr {
       border: 2px solid #fff;

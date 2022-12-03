@@ -209,6 +209,7 @@ footer {
     color: var(--secondary-color);
     font-style: normal;
     font-weight: 700;
+    font-size: 30px;
   }
   .footer-paragraph {
     color: var(--secondary-color);
@@ -535,7 +536,6 @@ footer {
 }
 // Responsive Media Query
 @media screen and (max-width: 768px) { 
-
   #hero {
     height: 550px;
     background-image: url(/assets/img/berita.png);
@@ -781,6 +781,27 @@ footer {
       }
     }
   }
+  footer {
+    .school-name {
+      color: var(--secondary-color);
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .footer-paragraph {
+      color: var(--secondary-color);
+      font-size: 13px;
+    }
+    i {
+      padding-right: 10px;
+      color: #fff;
+      font-size: 13px;
+    }
+    .footer-contact {
+      color: var(--secondary-color);
+      font-size: 13px;
+    }
+  }
 }
 @media only screen and (min-width: 992px) {
     .navbar {
@@ -877,6 +898,7 @@ footer {
       color: var(--secondary-color);
       font-style: normal;
       font-weight: 700;
+      font-size: 20px;
     }
     .footer-paragraph {
       color: var(--secondary-color);
@@ -1065,13 +1087,16 @@ footer {
     }
     .footer-paragraph {
       color: var(--secondary-color);
+      font-size: 14px;
     }
     i {
       padding-right: 10px;
       color: #fff;
+      font-size: 14px;
     }
     .footer-contact {
       color: var(--secondary-color);
+      font-size: 14px;
     }
     hr {
       border: 2px solid #fff;

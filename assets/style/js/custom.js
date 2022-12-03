@@ -15,7 +15,7 @@ var sarana = new Swiper(".slide-sarana", {
 var kegiatan = new Swiper(".slide-kegiatan", {
   cssMode: true,
   slidesPerView: 2.5,
-  spaceBetween: 1,
+  spaceBetween: 0,
   breakpoints: {
     300: {
       slidesPerView: 2.1,

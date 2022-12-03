@@ -18,7 +18,7 @@
 }
 
 body {
-  background-color: #EEFFF2;
+  background-color: #eefff2;
   overflow-x: hidden;
   text-decoration: none;
 }
@@ -333,19 +333,20 @@ footer {
   position: relative;
 }
 footer .school-name {
-  color: var(--text-page-color);
+  color: var(--secondary-color);
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
+  font-size: 30px;
 }
 footer .footer-paragraph {
-  color: var(--text-page-color);
+  color: var(--secondary-color);
 }
 footer i {
   padding-right: 10px;
   color: #fff;
 }
 footer .footer-contact {
-  color: var(--text-page-color);
+  color: var(--secondary-color);
 }
 footer hr {
   border: 2px solid #fff;
@@ -1441,16 +1442,23 @@ footer .vector4 {
     color: var(--text-page-color);
     font-style: normal;
     font-weight: 700;
+    font-size: 12px;
   }
   footer .footer-paragraph {
     color: var(--text-page-color);
+    font-size: 12px;
+    text-align: justify;
   }
   footer i {
     padding-right: 10px;
     color: #fff;
   }
+  footer iframe {
+    height: 200px;
+  }
   footer .footer-contact {
     color: var(--text-page-color);
+    font-size: 12px;
   }
   footer hr {
     border: 2px solid #fff;
@@ -1463,15 +1471,15 @@ footer .vector4 {
     top: 0;
   }
   footer .vector2 {
-    width: 330.49px;
-    height: 86.33px;
+    width: 260.49px;
+    height: 66.33px;
     position: absolute;
     right: 0;
     bottom: 0;
   }
   footer .vector3 {
-    width: 192.12px;
-    height: 102.61px;
+    width: 152.12px;
+    height: 82.61px;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -1494,6 +1502,27 @@ footer .vector4 {
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  footer .school-name {
+    color: var(--text-page-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  footer .footer-paragraph {
+    color: var(--text-page-color);
+    font-size: 13px;
+  }
+  footer i {
+    padding-right: 10px;
+    color: #fff;
+    font-size: 13px;
+  }
+  footer .footer-contact {
+    color: var(--text-page-color);
+    font-size: 13px;
+  }
+}
 @media only screen and (min-width: 992px) {
   .navbar .container {
     border-bottom: 3px solid var(--text-page-color);
@@ -1799,6 +1828,7 @@ footer .vector4 {
     color: var(--text-page-color);
     font-style: normal;
     font-weight: 700;
+    font-size: 20px;
   }
   footer .footer-paragraph {
     color: var(--text-page-color);
@@ -2176,13 +2206,16 @@ footer .vector4 {
   }
   footer .footer-paragraph {
     color: var(--text-page-color);
+    font-size: 14px;
   }
   footer i {
     padding-right: 10px;
     color: #fff;
+    font-size: 14px;
   }
   footer .footer-contact {
     color: var(--text-page-color);
+    font-size: 14px;
   }
   footer hr {
     border: 2px solid #fff;

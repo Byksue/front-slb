@@ -167,6 +167,7 @@ footer .school-name {
   color: var(--secondary-color);
   font-style: normal;
   font-weight: 700;
+  font-size: 30px;
 }
 footer .footer-paragraph {
   color: var(--secondary-color);
@@ -683,6 +684,25 @@ footer .vector4 {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1764705882);
     background-color: rgb(238, 238, 255);
   }
+  footer .school-name {
+    color: var(--secondary-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  footer .footer-paragraph {
+    color: var(--secondary-color);
+    font-size: 13px;
+  }
+  footer i {
+    padding-right: 10px;
+    color: #fff;
+    font-size: 13px;
+  }
+  footer .footer-contact {
+    color: var(--secondary-color);
+    font-size: 13px;
+  }
 }
 @media only screen and (min-width: 992px) {
   .navbar .container {
@@ -770,6 +790,7 @@ footer .vector4 {
     color: var(--secondary-color);
     font-style: normal;
     font-weight: 700;
+    font-size: 20px;
   }
   footer .footer-paragraph {
     color: var(--secondary-color);
@@ -934,13 +955,16 @@ footer .vector4 {
   }
   footer .footer-paragraph {
     color: var(--secondary-color);
+    font-size: 14px;
   }
   footer i {
     padding-right: 10px;
     color: #fff;
+    font-size: 14px;
   }
   footer .footer-contact {
     color: var(--secondary-color);
+    font-size: 14px;
   }
   footer hr {
     border: 2px solid #fff;
