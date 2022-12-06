@@ -20,8 +20,17 @@ var kegiatan = new Swiper(".slide-kegiatan", {
     300: {
       slidesPerView: 2.1,
     },
+    400: {
+      slidesPerView: 3,
+    },
+    500: {
+      slidesPerView: 3.3,
+    },
     600: {
       slidesPerView: 2.3,
+    },
+    700: {
+      slidesPerView: 2.8,
     },
     768: {
       slidesPerView: 2.5,
@@ -45,8 +54,17 @@ var prestasiNasional = new Swiper(".slide-prestasi-nasional", {
     300: {
       slidesPerView: 2.1,
     },
+    400: {
+      slidesPerView: 3,
+    },
+    500: {
+      slidesPerView: 3.3,
+    },
     600: {
       slidesPerView: 2.3,
+    },
+    700: {
+      slidesPerView: 2.8,
     },
     768: {
       slidesPerView: 2.5,
@@ -70,8 +88,17 @@ var prestasiProvinsi = new Swiper(".slide-prestasi-provinsi", {
     300: {
       slidesPerView: 2.1,
     },
+    400: {
+      slidesPerView: 3,
+    },
+    500: {
+      slidesPerView: 3.3,
+    },
     600: {
       slidesPerView: 2.3,
+    },
+    700: {
+      slidesPerView: 2.8,
     },
     768: {
       slidesPerView: 2.5,
@@ -95,8 +122,17 @@ var prestasiDaerah = new Swiper(".slide-prestasi-daerah", {
     300: {
       slidesPerView: 2.1,
     },
+    400: {
+      slidesPerView: 3,
+    },
+    500: {
+      slidesPerView: 3.3,
+    },
     600: {
       slidesPerView: 2.3,
+    },
+    700: {
+      slidesPerView: 2.8,
     },
     768: {
       slidesPerView: 2.5,
