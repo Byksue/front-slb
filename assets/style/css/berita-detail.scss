@@ -1,13 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:ital,wght@0,400;0,700;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600&display=swap");
 
 :root {
   /* color */
   --main-color: #ed7638;
-  --secondary-color: #2B7A0B;
-  --third-color:#F3C24C;
-  --fourth-color:#FFD779;
-
-;
+  --secondary-color: #2b7a0b;
+  --third-color: #f3c24c;
+  --fourth-color: #ffd779;
 }
 
 * {
@@ -22,7 +20,7 @@
 }
 
 body {
-  background-color: #EEFFF2;
+  background-color: #eefff2;
   overflow-x: hidden;
 }
 
@@ -51,6 +49,28 @@ body {
         .active {
           color: var(--main-color);
         }
+        .dropdown-toggle {
+          text-decoration: none;
+          color: rgba(237, 118, 56, 0.5);
+        }
+        .dropdown-menu {
+          background-color: var(--main-color);
+          border-radius: 10px;
+        }
+        .dropdown-item {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          color: #fff;
+        }
+        .dropdown-item:hover {
+          background-color: #c95c22;
+          font-style: normal;
+          font-weight: 800;
+          font-size: 24px;
+          color: #fff;
+          transition: 0.5s;
+        }
       }
     }
   }
@@ -75,14 +95,13 @@ body {
 #page-name {
   background-color: var(--fourth-color);
   overflow: hidden;
-  .kolom{
+  .kolom {
     .page-title {
-    font-weight: 700;
-    font-size: 32px;
-    color: var(--secondary-color);
+      font-weight: 700;
+      font-size: 32px;
+      color: var(--secondary-color);
+    }
   }
-  }
-  
 }
 
 // hero
@@ -121,38 +140,38 @@ body {
 }
 
 //berita
-#berita{
-    .container{
-        .inti{
-          .thumbnail{
-            .img-thumbnail{
-              min-height: 25rem;
-              object-fit: cover;
-            }
-          }
-            .isi-berita{
-                .penulis{
-                    color: var(--main-color);
-                    b{
-                        color: var(--main-color);
-                    }
-                }
-                .paragraf{
-                    text-align: justify;
-                    color: var(--main-color);
-                    font-size: 20px;
-                    b{
-                        color: var(--main-color);
-                    }
-                }
-            }
+#berita {
+  .container {
+    .inti {
+      .thumbnail {
+        .img-thumbnail {
+          min-height: 25rem;
+          object-fit: cover;
         }
+      }
+      .isi-berita {
+        .penulis {
+          color: var(--main-color);
+          b {
+            color: var(--main-color);
+          }
+        }
+        .paragraf {
+          text-align: justify;
+          color: var(--main-color);
+          font-size: 20px;
+          b {
+            color: var(--main-color);
+          }
+        }
+      }
     }
-    .memphis-anak6{
-      min-height: 50px;
-      max-height: 200px;
-    }
-} 
+  }
+  .memphis-anak6 {
+    min-height: 50px;
+    max-height: 200px;
+  }
+}
 
 // berita lainnya
 #berita-lain {
@@ -197,7 +216,6 @@ body {
     }
   }
 }
-
 
 // Footer
 footer {
@@ -254,12 +272,11 @@ footer {
   }
 }
 
-
 // seting memphis
-.memphis-bawah{
+.memphis-bawah {
   z-index: -999;
 }
-.memphis-atas{
+.memphis-atas {
   z-index: 999;
 }
 
@@ -288,6 +305,28 @@ footer {
           }
           .active {
             color: var(--main-color);
+          }
+          .dropdown-toggle {
+            text-decoration: none;
+            color: rgba(237, 118, 56, 0.5);
+          }
+          .dropdown-menu {
+            background-color: var(--main-color);
+            border-radius: 10px;
+          }
+          .dropdown-item {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            color: #fff;
+          }
+          .dropdown-item:hover {
+            background-color: #c95c22;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 12px;
+            color: #fff;
+            transition: 0.5s;
           }
         }
       }
@@ -331,7 +370,7 @@ footer {
     .hero-title {
       font-style: normal;
       font-weight: 700;
-      font-size:20px;
+      font-size: 20px;
       color: var(--fourth-color);
     }
     .hero-time {
@@ -404,7 +443,7 @@ footer {
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    .navbar {
+  .navbar {
     .container {
       border-bottom: 3px solid var(--secondary-color);
       .bi {
@@ -427,6 +466,28 @@ footer {
           .active {
             color: var(--main-color);
           }
+          .dropdown-toggle {
+            text-decoration: none;
+            color: rgba(237, 118, 56, 0.5);
+          }
+          .dropdown-menu {
+            background-color: var(--main-color);
+            border-radius: 10px;
+          }
+          .dropdown-item {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            color: #fff;
+          }
+          .dropdown-item:hover {
+            background-color: #c95c22;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 12px;
+            color: #fff;
+            transition: 0.5s;
+          }
         }
       }
     }
@@ -440,7 +501,7 @@ footer {
       color: var(--secondary-color);
     }
   }
-    #hero {
+  #hero {
     height: 250px;
     background-image: url(/assets/img/berita.png);
     background-position: center;
@@ -535,7 +596,7 @@ footer {
   }
 }
 // Responsive Media Query
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 768px) {
   #hero {
     height: 550px;
     background-image: url(/assets/img/berita.png);
@@ -583,7 +644,7 @@ footer {
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .navbar {
+  .navbar {
     .container {
       border-bottom: 3px solid var(--secondary-color);
       .bi {
@@ -605,6 +666,28 @@ footer {
           }
           .active {
             color: var(--main-color);
+          }
+          .dropdown-toggle {
+            text-decoration: none;
+            color: rgba(237, 118, 56, 0.5);
+          }
+          .dropdown-menu {
+            background-color: var(--main-color);
+            border-radius: 10px;
+          }
+          .dropdown-item {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            color: #fff;
+          }
+          .dropdown-item:hover {
+            background-color: #c95c22;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            color: #fff;
+            transition: 0.5s;
           }
         }
       }
@@ -634,7 +717,7 @@ footer {
       color: var(--secondary-color);
     }
   }
-    #hero {
+  #hero {
     height: 550px;
     background-image: url(/assets/img/berita.png);
     background-position: center;
@@ -730,11 +813,11 @@ footer {
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and(max-width: 992px) {
-  #berita{
-    .memphis-ballon3{
+  #berita {
+    .memphis-ballon3 {
       height: 10rem !important;
     }
-    .memphis-ballon4{
+    .memphis-ballon4 {
       height: 10rem !important;
     }
   }
@@ -804,7 +887,7 @@ footer {
   }
 }
 @media only screen and (min-width: 992px) {
-    .navbar {
+  .navbar {
     .container {
       border-bottom: 3px solid var(--secondary-color);
       .bi {
@@ -826,6 +909,28 @@ footer {
           }
           .active {
             color: var(--main-color);
+          }
+          .dropdown-toggle {
+            text-decoration: none;
+            color: rgba(237, 118, 56, 0.5);
+          }
+          .dropdown-menu {
+            background-color: var(--main-color);
+            border-radius: 10px;
+          }
+          .dropdown-item {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            color: #fff;
+          }
+          .dropdown-item:hover {
+            background-color: #c95c22;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 20px;
+            color: #fff;
+            transition: 0.5s;
           }
         }
       }
@@ -991,7 +1096,7 @@ footer {
   }
 }
 @media only screen and (min-width: 1200px) {
-    .navbar {
+  .navbar {
     .container {
       border-bottom: 3px solid var(--secondary-color);
       .bi {
@@ -1013,6 +1118,28 @@ footer {
           }
           .active {
             color: var(--main-color);
+          }
+          .dropdown-toggle {
+            text-decoration: none;
+            color: rgba(237, 118, 56, 0.5);
+          }
+          .dropdown-menu {
+            background-color: var(--main-color);
+            border-radius: 10px;
+          }
+          .dropdown-item {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            color: #fff;
+          }
+          .dropdown-item:hover {
+            background-color: #c95c22;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 24px;
+            color: #fff;
+            transition: 0.5s;
           }
         }
       }
@@ -1041,7 +1168,7 @@ footer {
       color: var(--secondary-color);
     }
   }
-    #hero {
+  #hero {
     height: 550px;
     background-image: url(/assets/img/berita.png);
     background-position: center;

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:ital,wght@0,400;0,700;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600&display=swap");
 
 :root {
   /* color */
@@ -49,6 +49,28 @@ body {
         }
         .active {
           color: var(--main-color);
+        }
+        .dropdown-toggle {
+          text-decoration: none;
+          color: rgba(237, 118, 56, 0.5);
+        }
+        .dropdown-menu {
+          background-color: var(--main-color);
+          border-radius: 10px;
+        }
+        .dropdown-item {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          color: #fff;
+        }
+        .dropdown-item:hover {
+          background-color: #c95c22;
+          font-style: normal;
+          font-weight: 800;
+          font-size: 24px;
+          color: #fff;
+          transition: 0.5s;
         }
       }
     }
@@ -447,6 +469,28 @@ footer {
           .active {
             color: var(--main-color);
           }
+          .dropdown-toggle {
+            text-decoration: none;
+            color: rgba(237, 118, 56, 0.5);
+          }
+          .dropdown-menu {
+            background-color: var(--main-color);
+            border-radius: 10px;
+          }
+          .dropdown-item {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            color: #fff;
+          }
+          .dropdown-item:hover {
+            background-color: #c95c22;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 12px;
+            color: #fff;
+            transition: 0.5s;
+          }
         }
       }
     }
@@ -820,6 +864,28 @@ footer {
           }
           .active {
             color: var(--main-color);
+          }
+          .dropdown-toggle {
+            text-decoration: none;
+            color: rgba(237, 118, 56, 0.5);
+          }
+          .dropdown-menu {
+            background-color: var(--main-color);
+            border-radius: 10px;
+          }
+          .dropdown-item {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            color: #fff;
+          }
+          .dropdown-item:hover {
+            background-color: #c95c22;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 12px;
+            color: #fff;
+            transition: 0.5s;
           }
         }
       }
@@ -1195,6 +1261,28 @@ footer {
           .active {
             color: var(--main-color);
           }
+          .dropdown-toggle {
+            text-decoration: none;
+            color: rgba(237, 118, 56, 0.5);
+          }
+          .dropdown-menu {
+            background-color: var(--main-color);
+            border-radius: 10px;
+          }
+          .dropdown-item {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            color: #fff;
+          }
+          .dropdown-item:hover {
+            background-color: #c95c22;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            color: #fff;
+            transition: 0.5s;
+          }
         }
       }
     }
@@ -1546,7 +1634,7 @@ footer {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and(max-width: 992px) {
-  footer{
+  footer {
     .school-name {
       color: var(--text-page-color);
       font-style: normal;
@@ -1591,6 +1679,28 @@ footer {
           }
           .active {
             color: var(--main-color);
+          }
+          .dropdown-toggle {
+            text-decoration: none;
+            color: rgba(237, 118, 56, 0.5);
+          }
+          .dropdown-menu {
+            background-color: var(--main-color);
+            border-radius: 10px;
+          }
+          .dropdown-item {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            color: #fff;
+          }
+          .dropdown-item:hover {
+            background-color: #c95c22;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 20px;
+            color: #fff;
+            transition: 0.5s;
           }
         }
       }
@@ -1959,6 +2069,28 @@ footer {
           }
           .active {
             color: var(--main-color);
+          }
+          .dropdown-toggle {
+            text-decoration: none;
+            color: rgba(237, 118, 56, 0.5);
+          }
+          .dropdown-menu {
+            background-color: var(--main-color);
+            border-radius: 10px;
+          }
+          .dropdown-item {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            color: #fff;
+          }
+          .dropdown-item:hover {
+            background-color: #c95c22;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 24px;
+            color: #fff;
+            transition: 0.5s;
           }
         }
       }

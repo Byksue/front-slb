@@ -14,7 +14,7 @@
     <!-- Icon Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
     <!-- AOS Animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
@@ -32,10 +32,16 @@
             <a class="nav-link" href="index.html">Home</a>
             <a class="nav-link" href="profile.html">Profile</a>
             <a class="nav-link" href="gallery.html">Galleri</a>
-            <a class="nav-link  active" href="Pengajar.html">Pengajar</a>
+            <div class="dropdown nav-link">
+              <a class="dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Pengajar </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Pengajar.html">Guru</a></li>
+                <li><a class="dropdown-item" href="Pengajar.html">Administrasi</a></li>
+              </ul>
+            </div>
             <a class="nav-link" href="berita.html">Berita</a>
           </div>
-          <a class="contact gap-1" href="#"
+          <a class="contact gap-1" href=""
             >Kontak
             <span><i class="bi bi-whatsapp"></i></span>
           </a>
@@ -56,7 +62,6 @@
     </div>
     <!-- page-title end -->
 
-
     <!-- Awal Section hero -->
     <div id="hero">
       <div class="container">
@@ -74,28 +79,28 @@
     </div>
     <!-- Akhir Section Hero -->
 
-
     <!-- Awal Section Guru1 -->
     <section id="guru1" class="position-relative">
       <div class="container py-5" data-aos="fade-up" data-aos-duration="1000">
         <div class="row d-flex align-items-center">
           <div class="col-md-6 img">
-            <img src="assets/img/guru.png" alt="guru" class="img-fluid">
+            <img src="assets/img/guru.png" alt="guru" class="img-fluid" />
           </div>
-          <div class="col-12 col-md-5 offset-md-1 konten py-5 py-md-0 ">
+          <div class="col-12 col-md-5 offset-md-1 konten py-5 py-md-0">
             <h2>Agus Rusmawan, S.Pd</h2>
             <h6>Guru Kelas A-1</h6>
-            <p class="py-3">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim necessitatibus consectetur quia ullam. Esse dignissimos, nisi consequuntur, neque et fugit quo mollitia, laudantium voluptates modi quam id! Dolorum veniam sapiente pariatur incidunt ex cum dolore dolorem aut sequi? Doloremque et reiciendis ab. Non odit alias vero laborum cum numquam cumque.</p>
+            <p class="py-3">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim necessitatibus consectetur quia ullam. Esse dignissimos, nisi consequuntur, neque et fugit quo mollitia, laudantium voluptates modi quam id! Dolorum veniam
+              sapiente pariatur incidunt ex cum dolore dolorem aut sequi? Doloremque et reiciendis ab. Non odit alias vero laborum cum numquam cumque.
+            </p>
           </div>
         </div>
       </div>
       <!-- memphis -->
-      <img src="assets/img/memphis-anak8.png" class="memphis-atas position-absolute top-0 end-0">
-      <img src="assets/img/memphis-awan4.png" class="memphis-awan4 memphis-atas position-absolute bottom-0 start-0">
-
+      <img src="assets/img/memphis-anak8.png" class="memphis-atas position-absolute top-0 end-0" />
+      <img src="assets/img/memphis-awan4.png" class="memphis-awan4 memphis-atas position-absolute bottom-0 start-0" />
     </section>
     <!-- Akhir Section Guru1 -->
-
 
     <!-- Awal Section Guru2 -->
     <section id="guru2" class="position-relative">
@@ -104,43 +109,47 @@
           <div class="col-md-5 konten py-5 py-md-0">
             <h2>Tri Mulyani, S.Pd</h2>
             <h6>Guru Kelas B-1</h6>
-            <p class="py-3">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim necessitatibus consectetur quia ullam. Esse dignissimos, nisi consequuntur, neque et fugit quo mollitia, laudantium voluptates modi quam id! Dolorum veniam sapiente pariatur incidunt ex cum dolore dolorem aut sequi? Doloremque et reiciendis ab. Non odit alias vero laborum cum numquam cumque.</p>
+            <p class="py-3">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim necessitatibus consectetur quia ullam. Esse dignissimos, nisi consequuntur, neque et fugit quo mollitia, laudantium voluptates modi quam id! Dolorum veniam
+              sapiente pariatur incidunt ex cum dolore dolorem aut sequi? Doloremque et reiciendis ab. Non odit alias vero laborum cum numquam cumque.
+            </p>
           </div>
           <div class="col-12 col-md-6 offset-md-1 img d-flex justify-content-md-end">
-            <img src="assets/img/guru.png" alt="guru" class="img-fluid">
+            <img src="assets/img/guru.png" alt="guru" class="img-fluid" />
           </div>
         </div>
       </div>
       <!-- memphis -->
-      <img src="assets/img/memphis-ballon5.png" class="position-absolute top-0 end-0 memphis-atas memphis-ballon5">
-      <img src="assets/img/memphis-ballon3.png" class="position-absolute top-50 start-0 translate-middle-x memphis-bawah memphis-ballon3">
-      <img src="assets/img/memphis-awan3.png" class="position-absolute bottom-0 end-0 memphis-atas">
+      <img src="assets/img/memphis-ballon5.png" class="position-absolute top-0 end-0 memphis-atas memphis-ballon5" />
+      <img src="assets/img/memphis-ballon3.png" class="position-absolute top-50 start-0 translate-middle-x memphis-bawah memphis-ballon3" />
+      <img src="assets/img/memphis-awan3.png" class="position-absolute bottom-0 end-0 memphis-atas" />
     </section>
     <!-- Akhir Section Guru2 -->
-
 
     <!-- Awal Section Guru3 -->
     <section id="guru1" class="position-relative">
       <div class="container py-5" data-aos="fade-up" data-aos-duration="1000">
         <div class="row d-flex align-items-center">
           <div class="col-md-6 img position-relative">
-            <img src="assets/img/guru.png" alt="guru" class="img-fluid">
+            <img src="assets/img/guru.png" alt="guru" class="img-fluid" />
             <!-- memphis -->
-            <img src="assets/img/memphis-anak9.png" class="memphis-atas position-absolute top-0 start-0 translate-middle memphis-anak9">
+            <img src="assets/img/memphis-anak9.png" class="memphis-atas position-absolute top-0 start-0 translate-middle memphis-anak9" />
           </div>
-          <div class="col-12 col-md-5 offset-md-1 konten py-5 py-md-0 ">
+          <div class="col-12 col-md-5 offset-md-1 konten py-5 py-md-0">
             <h2>Ruhit Taqwa, S.Pd</h2>
             <h6>Guru Kelas C-1</h6>
-            <p class="py-3">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim necessitatibus consectetur quia ullam. Esse dignissimos, nisi consequuntur, neque et fugit quo mollitia, laudantium voluptates modi quam id! Dolorum veniam sapiente pariatur incidunt ex cum dolore dolorem aut sequi? Doloremque et reiciendis ab. Non odit alias vero laborum cum numquam cumque.</p>
+            <p class="py-3">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim necessitatibus consectetur quia ullam. Esse dignissimos, nisi consequuntur, neque et fugit quo mollitia, laudantium voluptates modi quam id! Dolorum veniam
+              sapiente pariatur incidunt ex cum dolore dolorem aut sequi? Doloremque et reiciendis ab. Non odit alias vero laborum cum numquam cumque.
+            </p>
           </div>
         </div>
       </div>
       <!-- memphis -->
-      <img src="assets/img/memphis-ballon4.png" class="memphis-atas position-absolute top-100 start-0 translate-middle">
-      <img src="assets/img/memphis-ballon6.png" class="memphis-ballon6 memphis-bawah position-absolute bottom-0 end-0">
+      <img src="assets/img/memphis-ballon4.png" class="memphis-atas position-absolute top-100 start-0 translate-middle" />
+      <img src="assets/img/memphis-ballon6.png" class="memphis-ballon6 memphis-bawah position-absolute bottom-0 end-0" />
     </section>
     <!-- Akhir Section Guru3 -->
-
 
     <!-- Awal Section Video -->
     <section id="video">
@@ -150,16 +159,16 @@
             <h2>Video</h2>
           </div>
           <div class="col-12 video d-flex justify-content-center position-relative" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-            <img src="assets/img/video.png" style="width: 100vw; min-height: 30rem; max-height: 30rem;" class="img-video rounded-3">
+            <img src="assets/img/video.png" style="width: 100vw; min-height: 30rem; max-height: 30rem" class="img-video rounded-3" />
             <div class="filter position-absolute top-0 start-0"></div>
             <div class="deks position-absolute top-50 start-0 translate-middle-y p-md-5 p-5">
-                <h2>SESSIONS 1</h2>
-                <h6>Robert Downey Jr.</h6>
-                <p>Acting Teacher</p>
-                <button class="btn btn-play rounded-5">
-                  <i class="bi bi-play-fill"></i>
-                  Play
-                </button>
+              <h2>SESSIONS 1</h2>
+              <h6>Robert Downey Jr.</h6>
+              <p>Acting Teacher</p>
+              <button class="btn btn-play rounded-5">
+                <i class="bi bi-play-fill"></i>
+                Play
+              </button>
             </div>
           </div>
         </div>
@@ -167,61 +176,59 @@
     </section>
     <!-- Awal Section Video -->
 
-
-<!-- Footer start -->
-<footer>
-  <div class="container">
-    <div class="row d-flex justify-content-center align-items-center py-2 py-sm-5">
-      <div class="col-sm-6 d-flex flex-column justify-content-center align-items-center">
-        <div class="col-12 p-0 gap-3 d-flex align-items-center">
-          <img src="assets/img/logo-slbnb.svg" alt="" width="20%" />
-          <h5 class="school-name">SLB Negeri B Sumedang</h5>
-        </div>
-        <div class="col-12 pt-0 pt-md-3">
-          <p class="footer-paragraph p-0">bibendum neque egestas congue. Rutrumbibendum neque egestas congue. Rutrum</p>
-        </div>
-        <div class="col-sm-12 p-0">
-          <p class="footer-contact p-0"><i class="bi bi-envelope-fill"></i>dumyschool@gmai.com</p>
-          <p class="footer-contact p-0"><i class="bi bi-whatsapp"></i>0812-3244-5288</p>
+    <!-- Footer start -->
+    <footer>
+      <div class="container">
+        <div class="row d-flex justify-content-center align-items-center py-2 py-sm-5">
+          <div class="col-sm-6 d-flex flex-column justify-content-center align-items-center">
+            <div class="col-12 p-0 gap-3 d-flex align-items-center">
+              <img src="assets/img/logo-slbnb.svg" alt="" width="20%" />
+              <h5 class="school-name">SLB Negeri B Sumedang</h5>
+            </div>
+            <div class="col-12 pt-0 pt-md-3">
+              <p class="footer-paragraph p-0">bibendum neque egestas congue. Rutrumbibendum neque egestas congue. Rutrum</p>
+            </div>
+            <div class="col-sm-12 p-0">
+              <p class="footer-contact p-0"><i class="bi bi-envelope-fill"></i>dumyschool@gmai.com</p>
+              <p class="footer-contact p-0"><i class="bi bi-whatsapp"></i>0812-3244-5288</p>
+            </div>
+          </div>
+          <div class="col-sm-6 d-flex justify-content-center align-items-center">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.2907306810752!2d108.04254782918329!3d-6.871072999689665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb46c7208fbb3773e!2zNsKwNTInMTUuOSJTIDEwOMKwMDInMzUuMSJF!5e0!3m2!1sen!2sid!4v1656684665658!5m2!1sen!2sid"
+              width="100%"
+              height="250px"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
         </div>
       </div>
-      <div class="col-sm-6 d-flex justify-content-center align-items-center">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.2907306810752!2d108.04254782918329!3d-6.871072999689665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb46c7208fbb3773e!2zNsKwNTInMTUuOSJTIDEwOMKwMDInMzUuMSJF!5e0!3m2!1sen!2sid!4v1656684665658!5m2!1sen!2sid"
-          width="100%"
-          height="250px"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        >
-        </iframe>
+      <hr />
+      <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-sm-12 d-flex justify-content-center align-items-center text-center">
+            <p class="footer-paragraph">All rights Reserve to <b class="footer-paragraph">SLBN B. Sumedang</b></p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <hr />
-  <div class="container">
-    <div class="row d-flex justify-content-center align-items-center">
-      <div class="col-sm-12 d-flex justify-content-center align-items-center text-center">
-        <p class="footer-paragraph">All rights Reserve to <b class="footer-paragraph">SLBN B. Sumedang</b></p>
+      <div class="vector1">
+        <img src="assets/img/vectorfooter/vector1.svg" alt="" width="100%" />
       </div>
-    </div>
-  </div>
-  <div class="vector1">
-    <img src="assets/img/vectorfooter/vector1.svg" alt="" width="100%" />
-  </div>
-  <div class="vector2">
-    <img src="assets/img/vectorfooter/vector2.svg" alt="" width="100%" />
-  </div>
-  <div class="vector3">
-    <img src="assets/img/vectorfooter/vector3.svg" alt="" width="100%" />
-  </div>
-  <div class="vector4">
-    <img src="assets/img/vectorfooter/vector4.svg" alt="" width="100%" />
-  </div>
-</footer>
-<!-- Footer end -->
-
+      <div class="vector2">
+        <img src="assets/img/vectorfooter/vector2.svg" alt="" width="100%" />
+      </div>
+      <div class="vector3">
+        <img src="assets/img/vectorfooter/vector3.svg" alt="" width="100%" />
+      </div>
+      <div class="vector4">
+        <img src="assets/img/vectorfooter/vector4.svg" alt="" width="100%" />
+      </div>
+    </footer>
+    <!-- Footer end -->
 
     <!-- AOS Animation -->
     <script>

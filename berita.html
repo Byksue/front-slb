@@ -14,7 +14,7 @@
     <!-- Icon Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
     <!-- AOS Animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
@@ -32,8 +32,15 @@
             <a class="nav-link" href="index.html">Home</a>
             <a class="nav-link" href="profile.html">Profile</a>
             <a class="nav-link" href="gallery.html">Galleri</a>
-            <a class="nav-link" href="Pengajar.html">Pengajar</a>
-            <a class="nav-link  active" href="berita.html">Berita</a>
+            <div class="dropdown nav-link">
+              <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Pengajar </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Pengajar.html">Guru</a></li>
+                <li><a class="dropdown-item" href="Pengajar.html">Administrasi</a></li>
+              </ul>
+            </div>
+            <a class="nav-link active" href="berita.html">Berita</a>
           </div>
           <a class="contact gap-1" href="#"
             >Kontak
@@ -56,7 +63,6 @@
     </div>
     <!-- page-title end -->
 
-
     <!-- Awal Section hero -->
     <div id="hero">
       <div class="container">
@@ -65,7 +71,7 @@
           <div class="hero-content d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000">
             <div class="col-md-9 col-11">
               <div class="input-group bg-white rounded-5 p-2 gap-2">
-                <input type="text" class="form-control search-form-control py-md-3 rounded-5" placeholder="Masukan Informasi Berita yang Ingin di Cari" aria-label="Masukan berita" aria-describedby="button-addon2">
+                <input type="text" class="form-control search-form-control py-md-3 rounded-5" placeholder="Masukan Informasi Berita yang Ingin di Cari" aria-label="Masukan berita" aria-describedby="button-addon2" />
                 <button id="button-addon2" href="#" class="btn search-btn rounded-5">Cari Berita</button>
               </div>
             </div>
@@ -75,7 +81,6 @@
     </div>
     <!-- Akhir Section Hero -->
 
-
     <!-- Awal Section Berita Utama -->
     <section id="main-news" class="position-relative">
       <div class="container py-5" data-aos="fade-up" data-aos-duration="1000">
@@ -83,13 +88,13 @@
           <div class="news col-12 col-xl-11 d-flex justify-content-center">
             <a href="berita-detail.html" class="link-news text-decoration-none rounded-1">
               <div class="img-news d-flex justify-content-center">
-                <img src="assets/img/hero-gallery.png" alt="berita" class="img-thumbnail img-fluid p-md-0 p-1">
+                <img src="assets/img/hero-gallery.png" alt="berita" class="img-thumbnail img-fluid p-md-0 p-1" />
               </div>
               <div class="news-body p-2">
                 <p class="category">Berita Utama</p>
                 <div class="text-news d-md-flex justify-content-between gap-1">
                   <h3 class="title">Masa Pengenalan Lingkungan Sekolah di SLB Cimalaka</h3>
-                  <p class="deskripsi">Masa Pengenalan Lingkungan Sekolah (MPLS) adalah wadah awal untuk mengenalkan sekolah kepada peserta didik. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, fugiat. </p>
+                  <p class="deskripsi">Masa Pengenalan Lingkungan Sekolah (MPLS) adalah wadah awal untuk mengenalkan sekolah kepada peserta didik. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, fugiat.</p>
                 </div>
               </div>
             </a>
@@ -97,118 +102,115 @@
         </div>
       </div>
       <!-- memphis -->
-      <img src="assets/img/memphis-anak6.png" alt="" class="memphis-anak6 memphis-atas position-absolute top-0 end-0 translate-middle-y" style="height: 30%;">
-      <img src="assets/img/memphis-anak7.png" alt="" class="memphis-anak7 memphis-bawah position-absolute bottom-0 start-0 translate-middle-y" style="height: 30%;">
-      <img src="assets/img/memphis-pita.png" alt="" class="memphis-pita memphis-bawah position-absolute bottom-50 start-0">
-      <img src="assets/img/memphis-pita.png" alt="" class="memphis-pita memphis-bawah position-absolute bottom-0 end-0" style="height: 50%;">
-      <img src="assets/img/memphis-pita.png" alt="" class="memphis-pita memphis-bawah position-absolute top-0 start-50" style="height: 50%;">
+      <img src="assets/img/memphis-anak6.png" alt="" class="memphis-anak6 memphis-atas position-absolute top-0 end-0 translate-middle-y" style="height: 30%" />
+      <img src="assets/img/memphis-anak7.png" alt="" class="memphis-anak7 memphis-bawah position-absolute bottom-0 start-0 translate-middle-y" style="height: 30%" />
+      <img src="assets/img/memphis-pita.png" alt="" class="memphis-pita memphis-bawah position-absolute bottom-50 start-0" />
+      <img src="assets/img/memphis-pita.png" alt="" class="memphis-pita memphis-bawah position-absolute bottom-0 end-0" style="height: 50%" />
+      <img src="assets/img/memphis-pita.png" alt="" class="memphis-pita memphis-bawah position-absolute top-0 start-50" style="height: 50%" />
     </section>
     <!-- Akhir Section Berita Utama -->
 
-    
     <!-- Awal section berita lainnya -->
     <section id="berita-lain" class="position-relative">
-        <div class="container py-5">
-            <div class="row d-flex justify-content-center">
-                <div class="col-12 col-md-10 info-detail d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000">
-                    <p class="title text-center">Berita Terbaru</p>
+      <div class="container py-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-md-10 info-detail d-flex justify-content-center" data-aos="fade-up" data-aos-duration="1000">
+            <p class="title text-center">Berita Terbaru</p>
+          </div>
+          <div class="berita col-12 col-md-6 py-3 d-flex justify-content-center justify-content-md-around" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <a href="#" class="link text-decoration-none">
+              <div class="card-news p-3">
+                <img src="assets/img/berita.png" class="card-img-top" alt="berita" />
+                <div class="keterangan d-flex justify-content-between py-1">
+                  <p>10/ 10/ 2022</p>
+                  <p>Category</p>
                 </div>
-                <div class="berita col-12 col-md-6 py-3  d-flex justify-content-center justify-content-md-around" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-                    <a href="#" class="link text-decoration-none">
-                        <div class="card-news p-3">
-                            <img src="assets/img/berita.png" class="card-img-top" alt="berita">
-                            <div class="keterangan d-flex justify-content-between py-1">
-                                <p>10/ 10/ 2022</p>
-                                <p>Category</p>
-                            </div>
-                            <div class="body">
-                                <h3 class="title">Lorem ipsum dolor, sit amet consectetur adipisicing.</h3>
-                                <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, expedita sapiente. Earum ut nobis ullam dicta, facilis sit magnam consequatur.</p>
-                            </div>
-                        </div> 
-                    </a>
+                <div class="body">
+                  <h3 class="title">Lorem ipsum dolor, sit amet consectetur adipisicing.</h3>
+                  <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, expedita sapiente. Earum ut nobis ullam dicta, facilis sit magnam consequatur.</p>
                 </div>
-                <div class="berita col-12 col-md-6 py-3  d-flex justify-content-center justify-content-md-around" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-                    <a href="#" class="link text-decoration-none">
-                        <div class="card-news p-3">
-                            <img src="assets/img/berita.png" class="card-img-top" alt="berita">
-                            <div class="keterangan d-flex justify-content-between py-1">
-                                <p>10/ 10/ 2022</p>
-                                <p>Category</p>
-                            </div>
-                            <div class="body">
-                                <h3 class="title">Lorem ipsum dolor, sit amet consectetur adipisicing.</h3>
-                                <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, expedita sapiente. Earum ut nobis ullam dicta, facilis sit magnam consequatur.</p>
-                            </div>
-                        </div>
-                    </a>
+              </div>
+            </a>
+          </div>
+          <div class="berita col-12 col-md-6 py-3 d-flex justify-content-center justify-content-md-around" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <a href="#" class="link text-decoration-none">
+              <div class="card-news p-3">
+                <img src="assets/img/berita.png" class="card-img-top" alt="berita" />
+                <div class="keterangan d-flex justify-content-between py-1">
+                  <p>10/ 10/ 2022</p>
+                  <p>Category</p>
                 </div>
-            </div>
+                <div class="body">
+                  <h3 class="title">Lorem ipsum dolor, sit amet consectetur adipisicing.</h3>
+                  <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, expedita sapiente. Earum ut nobis ullam dicta, facilis sit magnam consequatur.</p>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
-        <!-- memphis -->
-      <img src="assets/img/memphis-pita.png" alt="" class="memphis-pita memphis-bawah position-absolute top-0 end-0" style="height: 50%;">
-      <img src="assets/img/memphis-pita.png" alt="" class="memphis-pita memphis-bawah position-absolute bottom-0 end-0" style="height: 50%;">
-      <img src="assets/img/memphis-pita.png" alt="" class="memphis-pita memphis-bawah position-absolute top-0 start-50" style="height: 50%;">
-      <img src="assets/img/memphis-pita.png" alt="" class="memphis-pita memphis-bawah position-absolute bottom-0 start-0 translate-middle-y" style="height: 30%;">
-      <img src="assets/img/memphis-pita.png" alt="" class="memphis-pita memphis-bawah position-absolute bottom-50 start-0">
+      </div>
+      <!-- memphis -->
+      <img src="assets/img/memphis-pita.png" alt="" class="memphis-pita memphis-bawah position-absolute top-0 end-0" style="height: 50%" />
+      <img src="assets/img/memphis-pita.png" alt="" class="memphis-pita memphis-bawah position-absolute bottom-0 end-0" style="height: 50%" />
+      <img src="assets/img/memphis-pita.png" alt="" class="memphis-pita memphis-bawah position-absolute top-0 start-50" style="height: 50%" />
+      <img src="assets/img/memphis-pita.png" alt="" class="memphis-pita memphis-bawah position-absolute bottom-0 start-0 translate-middle-y" style="height: 30%" />
+      <img src="assets/img/memphis-pita.png" alt="" class="memphis-pita memphis-bawah position-absolute bottom-50 start-0" />
     </section>
     <!-- Akhir section berita lainnya -->
 
-
-<!-- Footer start -->
-<footer>
-  <div class="container">
-    <div class="row d-flex justify-content-center align-items-center py-2 py-sm-5">
-      <div class="col-sm-6 d-flex flex-column justify-content-center align-items-center">
-        <div class="col-12 p-0 gap-3 d-flex align-items-center">
-          <img src="assets/img/logo-slbnb.svg" alt="" width="20%" />
-          <h5 class="school-name">SLB Negeri B Sumedang</h5>
-        </div>
-        <div class="col-12 pt-0 pt-md-3">
-          <p class="footer-paragraph p-0">bibendum neque egestas congue. Rutrumbibendum neque egestas congue. Rutrum</p>
-        </div>
-        <div class="col-sm-12 p-0">
-          <p class="footer-contact p-0"><i class="bi bi-envelope-fill"></i>dumyschool@gmai.com</p>
-          <p class="footer-contact p-0"><i class="bi bi-whatsapp"></i>0812-3244-5288</p>
+    <!-- Footer start -->
+    <footer>
+      <div class="container">
+        <div class="row d-flex justify-content-center align-items-center py-2 py-sm-5">
+          <div class="col-sm-6 d-flex flex-column justify-content-center align-items-center">
+            <div class="col-12 p-0 gap-3 d-flex align-items-center">
+              <img src="assets/img/logo-slbnb.svg" alt="" width="20%" />
+              <h5 class="school-name">SLB Negeri B Sumedang</h5>
+            </div>
+            <div class="col-12 pt-0 pt-md-3">
+              <p class="footer-paragraph p-0">bibendum neque egestas congue. Rutrumbibendum neque egestas congue. Rutrum</p>
+            </div>
+            <div class="col-sm-12 p-0">
+              <p class="footer-contact p-0"><i class="bi bi-envelope-fill"></i>dumyschool@gmai.com</p>
+              <p class="footer-contact p-0"><i class="bi bi-whatsapp"></i>0812-3244-5288</p>
+            </div>
+          </div>
+          <div class="col-sm-6 d-flex justify-content-center align-items-center">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.2907306810752!2d108.04254782918329!3d-6.871072999689665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb46c7208fbb3773e!2zNsKwNTInMTUuOSJTIDEwOMKwMDInMzUuMSJF!5e0!3m2!1sen!2sid!4v1656684665658!5m2!1sen!2sid"
+              width="100%"
+              height="250px"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
         </div>
       </div>
-      <div class="col-sm-6 d-flex justify-content-center align-items-center">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.2907306810752!2d108.04254782918329!3d-6.871072999689665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb46c7208fbb3773e!2zNsKwNTInMTUuOSJTIDEwOMKwMDInMzUuMSJF!5e0!3m2!1sen!2sid!4v1656684665658!5m2!1sen!2sid"
-          width="100%"
-          height="250px"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        >
-        </iframe>
+      <hr />
+      <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-sm-12 d-flex justify-content-center align-items-center text-center">
+            <p class="footer-paragraph">All rights Reserve to <b class="footer-paragraph">SLBN B. Sumedang</b></p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <hr />
-  <div class="container">
-    <div class="row d-flex justify-content-center align-items-center">
-      <div class="col-sm-12 d-flex justify-content-center align-items-center text-center">
-        <p class="footer-paragraph">All rights Reserve to <b class="footer-paragraph">SLBN B. Sumedang</b></p>
+      <div class="vector1">
+        <img src="assets/img/vectorfooter/vector1.svg" alt="" width="100%" />
       </div>
-    </div>
-  </div>
-  <div class="vector1">
-    <img src="assets/img/vectorfooter/vector1.svg" alt="" width="100%" />
-  </div>
-  <div class="vector2">
-    <img src="assets/img/vectorfooter/vector2.svg" alt="" width="100%" />
-  </div>
-  <div class="vector3">
-    <img src="assets/img/vectorfooter/vector3.svg" alt="" width="100%" />
-  </div>
-  <div class="vector4">
-    <img src="assets/img/vectorfooter/vector4.svg" alt="" width="100%" />
-  </div>
-</footer>
-<!-- Footer end -->
-
+      <div class="vector2">
+        <img src="assets/img/vectorfooter/vector2.svg" alt="" width="100%" />
+      </div>
+      <div class="vector3">
+        <img src="assets/img/vectorfooter/vector3.svg" alt="" width="100%" />
+      </div>
+      <div class="vector4">
+        <img src="assets/img/vectorfooter/vector4.svg" alt="" width="100%" />
+      </div>
+    </footer>
+    <!-- Footer end -->
 
     <!-- AOS Animation -->
     <script>
