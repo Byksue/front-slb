@@ -18,13 +18,15 @@ var kegiatan = new Swiper(".slide-kegiatan", {
   spaceBetween: 0,
   breakpoints: {
     300: {
-      slidesPerView: 2.5,
+      slidesPerView: 2,
+      spaceBetween: -30,
     },
     400: {
-      slidesPerView: 3.3,
+      slidesPerView: 3,
+      spaceBetween: -30,
     },
     500: {
-      slidesPerView: 4.3,
+      slidesPerView: 3.9,
     },
     600: {
       slidesPerView: 2.3,
@@ -52,13 +54,15 @@ var prestasiNasional = new Swiper(".slide-prestasi-nasional", {
   spaceBetween: 0,
   breakpoints: {
     300: {
-      slidesPerView: 2.5,
+      slidesPerView: 2,
+      spaceBetween: -30,
     },
     400: {
-      slidesPerView: 3.3,
+      slidesPerView: 3,
+      spaceBetween: -30,
     },
     500: {
-      slidesPerView: 4.3,
+      slidesPerView: 3.9,
     },
     600: {
       slidesPerView: 2.3,
@@ -86,13 +90,15 @@ var prestasiProvinsi = new Swiper(".slide-prestasi-provinsi", {
   spaceBetween: 0,
   breakpoints: {
     300: {
-      slidesPerView: 2.5,
+      slidesPerView: 2,
+      spaceBetween: -30,
     },
     400: {
-      slidesPerView: 3.3,
+      slidesPerView: 3,
+      spaceBetween: -30,
     },
     500: {
-      slidesPerView: 4.3,
+      slidesPerView: 3.9,
     },
     600: {
       slidesPerView: 2.3,
@@ -120,13 +126,15 @@ var prestasiDaerah = new Swiper(".slide-prestasi-daerah", {
   spaceBetween: 0,
   breakpoints: {
     300: {
-      slidesPerView: 2.5,
+      slidesPerView: 2,
+      spaceBetween: -30,
     },
     400: {
-      slidesPerView: 3.3,
+      slidesPerView: 3,
+      spaceBetween: -30,
     },
     500: {
-      slidesPerView: 4.3,
+      slidesPerView: 3.9,
     },
     600: {
       slidesPerView: 2.3,
